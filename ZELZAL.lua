@@ -19894,7 +19894,7 @@ LuaTele.sendDocument(Info_User, 0, msg.content.document.document.remote.id, '', 
 elseif msg.content.audio then
 LuaTele.sendAudio(Info_User, 0, msg.content.audio.audio.remote.id, '', "md") 
 elseif text then
-LuaTele.sendText(Info_User,0,text,"md",true)
+LuaTele.sendText(Info_User, 0,text,"md",true)
 end 
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(Info_User,'۩┊تم ارسال رسالتك اليه ').Reply,"md",true)  
 end
