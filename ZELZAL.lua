@@ -19902,7 +19902,6 @@ end
 end 
 end --UserBot
 end -- File_Bot_Run
-end
 
 
 function CallBackLua(data) --- هذا الكالباك بي الابديت
