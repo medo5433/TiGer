@@ -19902,6 +19902,8 @@ end
 end 
 end --UserBot
 end -- File_Bot_Run
+
+
 function CallBackLua(data) --- هذا الكالباك بي الابديت
 --var(data) 
 if data and data.luatele and data.luatele == "updateNewInlineQuery" then
