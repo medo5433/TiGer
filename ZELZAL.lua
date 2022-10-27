@@ -12122,25 +12122,45 @@ data = {
 }
 return LuaTele.sendText(msg_chat_id, msg_id, '*۩┊اوامر التفعيل والتعطيل *', 'md', false, false, false, false, reply_markup)
 end  
-if text == "مطور السورس" or text == "مطور تايجر" or text == "مبرمج السورس" or text == "مطور سورس" or text == "↫ مطور السورس ◉" then 
-Text = "› *The developer of this source is* : [ميدو](https://t.me/U_Y_3_M)."
-keyboard = {} 
-keyboard.inline_keyboard = {
-    {{text='› ميدو ‹',url="t.me/U_Y_3_M"},},}
-local msg_id = msg.id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&photo=https://t.me/U_Y_3_M&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-return false
-end
---     Source Brind     --
-if (text == 'المطور' or text == 'مطور' or text =='↫ المطور ◉' or text =='↫ مطور البوت ◉') then
-local TextingDevBrind = Redis:get(Brind..'Texting:DevBrind')
-if TextingDevBrind then 
-LuaTele.sendText(msg.chat_id,msg.id,TextingDevBrind,"md",true)  
+if text == 'ميرو' or text == 'mero' then  
+local UserId_Info = LuaTele.searchPublicChat("U_Y_3_M")
+if UserId_Info.id then
+local  ban = LuaTele.getUser(UserId_Info.id)
+local  bain = LuaTele.getUserFullInfo(UserId_Info.id)
+if  bain.bio then
+Bio =  bain.bio
 else
-local photo = LuaTele.getUserProfilePhotos(Sudo_Id)
-local UserInfo = LuaTele.getUser(Sudo_Id)
-for Name_User in string.gmatch(UserInfo.first_name, "[^%s]+" ) do
-end 
+Bio = 'لا يوجد'
+end
+if ban.first_name then
+Creat = " "..ban.first_name.." "
+else
+Creat = " Developers Bot \n"
+end
+local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
+if photo.total_count > 0 then
+local TestText = "  ❲ َِ𝐃𝐄𝐕 𝐌𝐄𝐃𝐎 ,❳\nᥫ᭡\n ⌔ *ًًًًٍٍٍٍ ٍٍّّ𝗡ّّ𝗮ِِّّ𝗺ََِِ𝗲ᥫ᭡* :  [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n⌔  * ًًٍٍ𝗕ٍٍَ𝗶ُُ𝗼 ᥫ᭡* : [❲ "..Bio.." ❳]"
+keyboardd = {} 
+keyboardd.inline_keyboard = {
+{
+{text = Creat, url = "https://t.me/"..ban.username..""},
+},
+}
+local msg_id = msg.id/2097152/0.5 
+ https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+else
+local TestText = "- معلومات المطور: \\nn: name Dev . [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n\n ["..Bio.."]"
+keyboardd = {} 
+keyboardd.inline_keyboard = {
+{
+{text = Creat, url = "https://t.me/"..ban.username..""},
+},
+}
+local msg_id = msg.id/2097152/0.5 
+ https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+end
+end
+end
 if text == 'اعدادات الحمايه' then 
 if not msg.Addictive or not msg.Mddictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*۩┊مايمديك .. هـذا الامـر يخـص { '..Controller_Num(8)..' }* ',"md",true)  
