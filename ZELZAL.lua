@@ -853,14 +853,14 @@ else
 UserInfousername = '['..UserInfo.first_name..'](tg://user?id='..UserId..')'
 end
 return {
-Lock     = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 〠\n*┉┉┉┉┉┉┉┉┉┉┉┉\n۩┊بواسطـة ← *'..UserInfousername..'\n*'..TextMsg..'\n۩┊خاصيه المسح *',
-unLock   = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 〠\n*┉┉┉┉┉┉┉┉┉┉┉┉\n۩┊بواسطـة ← *'..UserInfousername..'\n'..TextMsg,
-lockKtm  = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 〠\n*┉┉┉┉┉┉┉┉┉┉┉┉\n۩┊بواسطـة ← *'..UserInfousername..'\n*'..TextMsg..'\n۩┊خاصيه الكتم *',
-lockKid  = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 〠\n*┉┉┉┉┉┉┉┉┉┉┉┉\n۩┊بواسطـة ← *'..UserInfousername..'\n*'..TextMsg..'\n۩┊خاصيه التقييد *',
-lockKick = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 〠\n*┉┉┉┉┉┉┉┉┉┉┉┉\n۩┊بواسطـة ← *'..UserInfousername..'\n*'..TextMsg..'\n۩┊خاصيه الطرد *',
-ahkamz = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 *- لعبـة احكـام ⚖👩🏻‍⚖*\n*┉┉┉┉┉┉┉┉┉┉┉┉\n۩┊اللاعـب ← *'..UserInfousername..'\n*'..TextMsg..'\n\n۩┊اليريـد ينضـم يرسـل ( انا ) *',
-zahkamz = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 *- لعبـة احكـام ⚖👩🏻‍⚖*\n*┉┉┉┉┉┉┉┉┉┉┉┉\n۩┊اللاعـب ← *'..UserInfousername..'\n*'..TextMsg..'\n\n۩┊لبـدء المحـاكمـة ارسـل ( تم ) *',
-Reply    = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 〠\n*┉┉┉┉┉┉┉┉┉┉┉┉\n۩┊المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
+Lock     = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙏𝙄𝙂𝙀𝙍  〠\n* »»——- ★ TIGER ★ ——-«« \n۩┊بواسطـة ← *'..UserInfousername..'\n*'..TextMsg..'\n۩┊خاصيه المسح *',
+unLock   = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙏𝙄𝙂𝙀𝙍  〠\n* »»——- ★ TIGER ★ ——-«« \n۩┊بواسطـة ← *'..UserInfousername..'\n'..TextMsg,
+lockKtm  = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙏𝙄𝙂𝙀𝙍  〠\n* »»——- ★ TIGER ★ ——-«« \n۩┊بواسطـة ← *'..UserInfousername..'\n*'..TextMsg..'\n۩┊خاصيه الكتم *',
+lockKid  = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙏𝙄𝙂𝙀𝙍  〠\n* »»——- ★ TIGER ★ ——-«« \n۩┊بواسطـة ← *'..UserInfousername..'\n*'..TextMsg..'\n۩┊خاصيه التقييد *',
+lockKick = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙏𝙄𝙂𝙀𝙍  〠\n* »»——- ★ TIGER ★ ——-«« \n۩┊بواسطـة ← *'..UserInfousername..'\n*'..TextMsg..'\n۩┊خاصيه الطرد *',
+ahkamz = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙏𝙄𝙂𝙀𝙍  *- لعبـة احكـام ⚖👩🏻‍⚖*\n* »»——- ★ TIGER ★ ——-«« \n۩┊اللاعـب ← *'..UserInfousername..'\n*'..TextMsg..'\n\n۩┊اليريـد ينضـم يرسـل ( انا ) *',
+zahkamz = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙏𝙄𝙂𝙀𝙍  *- لعبـة احكـام ⚖👩🏻‍⚖*\n* »»——- ★ TIGER ★ ——-«« \n۩┊اللاعـب ← *'..UserInfousername..'\n*'..TextMsg..'\n\n۩┊لبـدء المحـاكمـة ارسـل ( تم ) *',
+Reply    = '𝙎𝙊𝙐𝙍𝘾𝙀 𝙏𝙄𝙂𝙀𝙍  〠\n* »»——- ★ TIGER ★ ——-«« \n۩┊المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
 }
 end
 function StatusCanOrNotCan(ChatId,UserId)
@@ -1929,7 +1929,7 @@ LuaTele.sendText(msg_chat_id,msg_id,[[*
 - للخروج من الامر : اضغظ الغاء الامر ᪣
 ٴ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 ↯• يمكنك اضافة الى النص •↯
-┉┉┉┉┉┉┉┉┉┉┉┉
+ »»——- ★ TIGER ★ ——-«« 
  #username ↬ معرف المستخدم
  #msgs ↬ عدد الرسائل
  #name ↬ اسم المستخدم
@@ -2149,7 +2149,7 @@ LuaTele.sendText(msg_chat_id,msg_id,[[*
 - للخروج من الامر : اضغظ الغاء الامر ᪣
 ٴ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 ↯• يمكنك اضافة الى النص •↯
-┉┉┉┉┉┉┉┉┉┉┉┉
+ »»——- ★ TIGER ★ ——-«« 
  #username ↬ معرف المستخدم
  #msgs ↬ عدد الرسائل
  #name ↬ اسم المستخدم
@@ -3042,7 +3042,7 @@ if ChannelJoin(msg) == false then
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/'..Redis:get(ZELZAL..'ZELZAL:Channel:Join')}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n۩┊عليك الاشتراك في قناة البوت لـ استخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
-LuaTele.sendText(msg_chat_id,msg_id,'*۩┊عدد احصائيات البوت الكامله \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ\n۩┊عدد المجموعات : '..(Redis:scard(ZELZAL..'ZELZAL:ChekBotAdd') or 0)..'\n۩┊عدد المشتركين : '..(Redis:scard(ZELZAL..'ZELZAL:Num:User:Pv') or 0)..'*',"md",true)  
+LuaTele.sendText(msg_chat_id,msg_id,'*۩┊عدد احصائيات البوت الكامله \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ \n۩┊عدد المجموعات : '..(Redis:scard(ZELZAL..'ZELZAL:ChekBotAdd') or 0)..'\n۩┊عدد المشتركين : '..(Redis:scard(ZELZAL..'ZELZAL:Num:User:Pv') or 0)..'*',"md",true)  
 end
 if text == 'تفعيل' and msg.Developers then
 if msg.can_be_deleted_for_all_users == false then
@@ -3543,7 +3543,7 @@ end
 if GetMemberStatus.can_promote_members then
 promote = '❬ ✔️ ❭' else promote = '❬ ❌ ❭'
 end
-PermissionsUser = '*\n۩┊صلاحيات المستخدم :\nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ'..'\n۩┊تغيير المعلومات : '..change_info..'\n۩┊تثبيت الرسائل : '..pin_messages..'\n۩┊اضافه مستخدمين : '..invite_users..'\n۩┊مسح الرسائل : '..delete_messages..'\n۩┊حظر المستخدمين : '..restrict_members..'\n۩┊اضافه المشرفين : '..promote..'\n\n*'
+PermissionsUser = '*\n۩┊صلاحيات المستخدم :\nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ '..'\n۩┊تغيير المعلومات : '..change_info..'\n۩┊تثبيت الرسائل : '..pin_messages..'\n۩┊اضافه مستخدمين : '..invite_users..'\n۩┊مسح الرسائل : '..delete_messages..'\n۩┊حظر المستخدمين : '..restrict_members..'\n۩┊اضافه المشرفين : '..promote..'\n\n*'
 end
 return LuaTele.sendText(msg_chat_id,msg_id,
 '\n*۩┊الايـدي ⇜ '..UserId..
@@ -3586,7 +3586,7 @@ end
 if GetMemberStatus.can_promote_members then
 promote = '❬ ✔️ ❭' else promote = '❬ ❌ ❭'
 end
-PermissionsUser = '*\n۩┊صلاحيات البوت في المجموعه :\nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ'..'\n۩┊تغيير المعلومات : '..change_info..'\n۩┊تثبيت الرسائل : '..pin_messages..'\n۩┊اضافه مستخدمين : '..invite_users..'\n۩┊مسح الرسائل : '..delete_messages..'\n۩┊حظر المستخدمين : '..restrict_members..'\n۩┊اضافه المشرفين : '..promote..'\n\n*'
+PermissionsUser = '*\n۩┊صلاحيات البوت في المجموعه :\nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ '..'\n۩┊تغيير المعلومات : '..change_info..'\n۩┊تثبيت الرسائل : '..pin_messages..'\n۩┊اضافه مستخدمين : '..invite_users..'\n۩┊مسح الرسائل : '..delete_messages..'\n۩┊حظر المستخدمين : '..restrict_members..'\n۩┊اضافه المشرفين : '..promote..'\n\n*'
 return LuaTele.sendText(msg_chat_id,msg_id,PermissionsUser,"md",true) 
 end
 
@@ -6307,7 +6307,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:DevelopersQ:Groups")
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا يوجد مطورين حاليا ...*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه مطورين الاساسيين \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه مطورين الاساسيين \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6333,7 +6333,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:Developers:Groups")
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا يوجد مطورين حاليا ...*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه مطورين البوت \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه مطورين البوت \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6359,7 +6359,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:TheMaleks:Group"..msg_chat_i
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا يوجـد مالكين حاليـاً*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه المالكين \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه المالكين \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6385,7 +6385,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:TheBasics:Group"..msg_chat_i
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"۩┊لا يوجد منشئين اساسيين حاليا , ","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه المنشئين الاساسيين \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه المنشئين الاساسيين \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6411,7 +6411,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:Originators:Group"..msg_chat
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"۩┊لا يوجد منشئين حاليا , ","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه المنشئين  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه المنشئين  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6437,7 +6437,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:Managers:Group"..msg_chat_id
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"۩┊لا يوجد مدراء حاليا , ","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه المدراء  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه المدراء  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6463,7 +6463,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:Addictive:Group"..msg_chat_i
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا يوجـد ادمنيـه حاليـاً*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه الادمنيه  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه الادمنيه  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6489,7 +6489,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:Distinguished:Group"..msg_ch
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"۩┊لا يوجد مميزين حاليا , ","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه المميزين  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه المميزين  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6515,7 +6515,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:MevelopersQ:Groups")
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا يوجـد مطـورات اساسيات في البوت حاليـاً*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه المطورات الاساسيات \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه المطورات الاساسيات \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6541,7 +6541,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:Mevelopers:Groups")
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا يوجـد مطـورات في البوت حاليـاً*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه مطورات البوت \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه مطورات البوت \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6567,7 +6567,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:TheMalems:Group"..msg_chat_i
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا يوجـد مالكـات حاليـاً*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه المالكات \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه المالكات \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6593,7 +6593,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:TheMasics:Group"..msg_chat_i
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا يوجـد منشئات اساسيـات حاليـاً*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه المنشئات الاساسيات \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه المنشئات الاساسيات \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6619,7 +6619,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:Origimators:Group"..msg_chat
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا يوجـد منشئات حاليـاً*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه المنشئات  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه المنشئات  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6645,7 +6645,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:Mamagers:Group"..msg_chat_id
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا توجـد مديـرات حاليا 🤵🏻‍♀*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه المديرات  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه المديرات  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6671,7 +6671,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:Mddictive:Group"..msg_chat_i
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا توجـد ادمونـات حاليـاً*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه الادمونات  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه الادمونات  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6697,7 +6697,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:Mistinguished:Group"..msg_ch
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا توجـد مميـزات حاليـاً*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه المميزات  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه المميزات  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6723,7 +6723,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:BanAll:Groups")
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا يوجد محظورين عام حاليا ,*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه المحظورين عام  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه المحظورين عام  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6749,7 +6749,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:ktmAll:Groups")
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id," ⦁ لا يوجد مكتومين عام في البوت ","md",true)  
 end
-ListMembers = '\n* ⦁ قائمـه المكتومين عام ⇧⇩*\nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ\n'
+ListMembers = '\n* ⦁ قائمـه المكتومين عام ⇧⇩*\nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ \n'
 for k, v in pairs(Info_Members) do
 local ban = LuaTele.getUser(v)
 if ban and ban.username and ban.username ~= "" then
@@ -6775,7 +6775,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:BanGroup:Group"..msg_chat_id
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"۩┊لا يوجد محظورين حاليا , ","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه المحظورين  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه المحظورين  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6801,7 +6801,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:SilentGroup:Group"..msg_chat
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"۩┊لا يوجد مكتومين حاليا , ","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه المكتومين  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه المكتومين  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6825,7 +6825,7 @@ local Info_Members = Redis:smembers(ZELZAL.."kholat:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"۩┊لا يوجد خولات حاليا , ","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه الخولات  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه الخولات  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6848,7 +6848,7 @@ local Info_Members = Redis:smembers(ZELZAL.."wtka:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا يوجد عروسـات بنات المجمـوعـة بعـدهن سناكـل 🌚😹🤷🏻‍♀*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـة عروسـات المجمـوعـة 👰🏻‍♀🌸  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـة عروسـات المجمـوعـة 👰🏻‍♀🌸  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6871,7 +6871,7 @@ local Info_Members = Redis:smembers(ZELZAL.."twhd:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"۩┊مفيش ورعان هنا كلهم اتعالجو 😂😂 , ","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه الورعان  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه الورعان  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6894,7 +6894,7 @@ local Info_Members = Redis:smembers(ZELZAL.."twhda:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊مفـيش مـزز هنا كلهم ركـب سـوداء 😂😂*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـة مـزز  المجمـوعـة 🦦🦦💃 \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـة مـزز  المجمـوعـة 🦦🦦💃 \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6917,7 +6917,7 @@ local Info_Members = Redis:smembers(ZELZAL.."klb:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊مفيش كلاب هنا ارفعلنا شويه كلاب نعطيهم عضمـه 😂😂*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه الكلاب  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه الكلاب  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6940,7 +6940,7 @@ local Info_Members = Redis:smembers(ZELZAL.."mar:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"۩┊مفيش حمير هنا 😂😂 , ","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه الحمير  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه الحمير  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6963,7 +6963,7 @@ local Info_Members = Redis:smembers(ZELZAL.."zahf:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊مفيش زواحف هنا 😂😂 , *","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه الزواحف  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه الزواحف  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -6986,7 +6986,7 @@ local Info_Members = Redis:smembers(ZELZAL.."3ra:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊مفيش عرر هنا 😂😂 , *","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه صايعيـن المجمـوعـة  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه صايعيـن المجمـوعـة  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -7009,7 +7009,7 @@ local Info_Members = Redis:smembers(ZELZAL.."smb:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊مفيش صاكـين هنا 😂😂*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـة صاكيـن الكـروب 😍💞  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـة صاكيـن الكـروب 😍💞  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -7032,7 +7032,7 @@ local Info_Members = Redis:smembers(ZELZAL.."smba:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊مفيش صاكـات هنا 😂😂*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـة صاكـات الكـروب 💋😍💞  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـة صاكـات الكـروب 💋😍💞  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -7055,7 +7055,7 @@ local Info_Members = Redis:smembers(ZELZAL.."2rd:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊مفيش قرود هنا يصحبي 😂😂 , *","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه القرود  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه القرود  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -7078,7 +7078,7 @@ local Info_Members = Redis:smembers(ZELZAL.."8by:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊مفيش اغبيـاء هنا يصحبي 😂😂 , *","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه الأغبيـاء  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه الأغبيـاء  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -7101,7 +7101,7 @@ local Info_Members = Redis:smembers(ZELZAL.."alpe:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊مفيش قلوب هنا يصحبي 😂😂 , *","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه القلوب  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه القلوب  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -7124,7 +7124,7 @@ local Info_Members = Redis:smembers(ZELZAL.."botaua:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊مفيش اولاد هنا يصحبي 😂😂*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه ولادي  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه ولادي  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -7147,7 +7147,7 @@ local Info_Members = Redis:smembers(ZELZAL.."bwoman:Group"..msg_chat_id)
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊مفيش بنات هنا يصحبي 😂😂 , *","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه بناتي  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه بناتي  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -9247,7 +9247,7 @@ if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*۩┊عذرآ البوت ليس ادمن في المجموعه يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 local Info_Members = LuaTele.getSupergroupMembers(msg_chat_id, "Administrators", "*", 0, 200)
-listAdmin = '\n*۩┊تعـالـو يامشـرفين 🙋🏻‍♀🍂 \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+listAdmin = '\n*۩┊تعـالـو يامشـرفين 🙋🏻‍♀🍂 \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 local List_Members = Info_Members.members
 for k, v in pairs(List_Members) do
 if Info_Members.members[k].status.luatele == "chatMemberStatusCreator" then
@@ -9351,7 +9351,7 @@ return LuaTele.sendText(msg_chat_id,msg_id,"\n*۩┊عذرآ البوت ليس �
 end
 local Info_Members = LuaTele.getSupergroupMembers(msg_chat_id, "Bots", "*", 0, 200)
 local List_Members = Info_Members.members
-listBots = '\n*۩┊قائمـه البوتات \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+listBots = '\n*۩┊قائمـه البوتات \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 x = 0
 for k, v in pairs(List_Members) do
 local UserInfo = LuaTele.getUser(v.member_id.user_id)
@@ -9363,7 +9363,7 @@ Admin = ""
 end
 listBots = listBots.."*"..k.." - @"..UserInfo.username.."* "..Admin.."\n"
 end
-LuaTele.sendText(msg_chat_id,msg_id,listBots.."*\nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ\n۩┊عدد البوتات التي هي ادمن ( "..x.." )*","md",true)  
+LuaTele.sendText(msg_chat_id,msg_id,listBots.."*\nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ \n۩┊عدد البوتات التي هي ادمن ( "..x.." )*","md",true)  
 end
 
 
@@ -9383,7 +9383,7 @@ local Info_Members = LuaTele.getSupergroupMembers(msg_chat_id, "Recent", "*", 0,
 local List_Members = Info_Members.members
 x = 0
 y = nil
-restricted = '\n*۩┊قائمـه المقيديين \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+restricted = '\n*۩┊قائمـه المقيديين \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(List_Members) do
 if Info_Members.members[k].status.is_member == true and Info_Members.members[k].status.luatele == "chatMemberStatusRestricted" then
 y = true
@@ -9412,7 +9412,7 @@ return LuaTele.sendText(msg.chat_id,msg.id,'*\n۩┊عليك الاشتراك ف
 end
 local Info_Members = LuaTele.searchChatMembers(msg_chat_id, "*", 200)
 local List_Members = Info_Members.members
-listall = '\n*۩┊قائمـه الاعضاء \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+listall = '\n*۩┊قائمـه الاعضاء \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(List_Members) do
 local UserInfo = LuaTele.getUser(v.member_id.user_id)
 if UserInfo.username ~= "" then
@@ -9909,7 +9909,7 @@ local zwgat_list = Redis:smembers(ZELZAL..msg_chat_id.."zwgat:")
 if #zwgat_list == 0 then 
 return LuaTele.sendText(msg_chat_id,msg_id,'*۩┊لايوجد زوجات*',"md",true) 
 end 
-local zwga_list = "*۩┊قائمـه عروسـات المجمـوعـة 👰🏻‍♀🌸 *"..#zwgat_list.."\n*ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n"
+local zwga_list = "*۩┊قائمـه عروسـات المجمـوعـة 👰🏻‍♀🌸 *"..#zwgat_list.."\n*ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n"
 for k, v in pairs(zwgat_list) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -9925,7 +9925,7 @@ local lonely_list = Redis:smembers(ZELZAL..msg_chat_id.."lonely:")
 if #lonely_list == 0 then 
 return LuaTele.sendText(msg_chat_id,msg_id,'*۩┊لايوجد ورعان *',"md",true) 
 end 
-local lone_list = "*۩┊قائمـه ورعان المجمـوعـه *"..#lonely_list.."\n*ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n"
+local lone_list = "*۩┊قائمـه ورعان المجمـوعـه *"..#lonely_list.."\n*ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n"
 for k, v in pairs(lonely_list) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -9941,7 +9941,7 @@ local mutlqat_list = Redis:smembers(ZELZAL..msg_chat_id.."mutlqat:")
 if #mutlqat_list == 0 then 
 return LuaTele.sendText(msg_chat_id,msg_id,'*۩┊لايوجد مطلقات*',"md",true) 
 end 
-local mutlqa_list = "*۩┊قائمـه المطلقات *"..#mutlqat_list.."\n*ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n"
+local mutlqa_list = "*۩┊قائمـه المطلقات *"..#mutlqat_list.."\n*ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n"
 for k, v in pairs(mutlqat_list) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -9957,7 +9957,7 @@ local klbklb_list = Redis:smembers(ZELZAL..msg_chat_id.."klbklb:")
 if #klbklb_list == 0 then 
 return LuaTele.sendText(msg_chat_id,msg_id,'*۩┊لايـوجـد كـلاب *',"md",true) 
 end 
-local klbk_list = "*۩┊قائمـه كـلاب المجمـوعـه *"..#klbklb_list.."\n*ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n"
+local klbk_list = "*۩┊قائمـه كـلاب المجمـوعـه *"..#klbklb_list.."\n*ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n"
 for k, v in pairs(klbklb_list) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -11825,7 +11825,7 @@ local list = Redis:smembers(ZELZAL.."ZELZAL:List:Filter"..msg_chat_id)
 if #list == 0 then  
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا يوجد كلمات ممنوعه هنا *","md",true)   
 end  
-Filter = '\n*۩┊قائمـه المنع \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+Filter = '\n*۩┊قائمـه المنع \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k,v in pairs(list) do  
 print(v)
 if v:match('photo:(.*)') then
@@ -11915,7 +11915,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اض�
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n۩┊عليك الاشتراك في قناة البوت لـ استخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(ZELZAL.."ZELZAL:Command:List:Group"..msg_chat_id.."")
-Command = "۩┊عيني ⇜ اليك قائمـة الاوامـر المضافـه  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ\n"
+Command = "۩┊عيني ⇜ اليك قائمـة الاوامـر المضافـه  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ \n"
 for k,v in pairs(list) do
 Commands = Redis:get(ZELZAL.."ZELZAL:Get:Reides:Commands:Group"..msg_chat_id..":"..v)
 if Commands then 
@@ -11976,7 +11976,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اض�
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n ۩┊ عليك الاشتراك في قناة البوت لـ استخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(ZELZAL.."ZELZAL:All:Command:List:Group")
-Command = " ۩┊ قائمـه الاوامر المضافه عام  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ\n"
+Command = " ۩┊ قائمـه الاوامر المضافه عام  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ \n"
 for k,v in pairs(list) do
 Commands = Redis:get(ZELZAL.."ZELZAL:All:Get:Reides:Commands:Group"..v)
 if Commands then 
@@ -12155,6 +12155,40 @@ data = {
 }
 return LuaTele.sendText(msg_chat_id, msg_id, '*۩┊اوامر التفعيل والتعطيل *', 'md', false, false, false, false, reply_markup)
 end  
+if text == '〘 مبرمج السورس 〙' or text == 'مبرمج السورس' or text == 'ميدو' or text == 'محمد' or text == 'اليوت' then  
+local UserId_Info = bot.searchPublicChat("U_Y_3_M")
+if UserId_Info.id then
+local  ban = bot.getUser(UserId_Info.id)
+local InfoUser = bot.getUserFullInfo(UserId_Info.id)
+if InfoUser.bio then
+Bio = InfoUser.bio
+else
+Bio = ''
+end
+local photo = bot.getUserProfilePhotos(UserId_Info.id)
+if photo.total_count > 0 then
+local DevJabwa = "*𖥔︙ 𝒅𝒆𝒗 𝒔𝒐𝒖𝒓𝒄𝒆 𝒕𝒊𝒈𝒆𝒓  ♯*\n*𖥔︙ɴᴀᴍᴇ -› *"..ban.first_name.."\n*𖥔︙ 𝒊𝒅 -› "..UserId_Info.id.."*\n*𖥔︙ 𝒃𝒊𝒐 -›*  *"..Bio.." *"
+keyboardd = {} 
+keyboardd.inline_keyboard = {
+{
+{text = username, url = "https://t.me/U_Y_3_M"}
+},
+}
+local msg_id = msg.id/2097152/0.5 
+https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(DevJabwa)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+else
+local Dev Medo = "*𖥔︙ 𝒅𝒆𝒗 𝒔𝒐𝒖𝒓𝒄𝒆 𝒕𝒊𝒈𝒆𝒓  ♯*\n*𖥔︙𝒏𝒂𝒎𝒆  -› *"..ban.first_name.."\n*𖥔︙ 𝒊𝒅  -› "..UserId_Info.id.."*\n*𖥔︙ 𝒃𝒊𝒐 -›*  *"..Bio.." *"
+keyboardd = {} 
+keyboardd.inline_keyboard = {
+{
+{text = username, url = "https://t.me/U_Y_3_M"}
+},
+}
+local msg_id = msg.id/2097152/0.5 
+https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(DevJabwa).."&reply_to_message_id="..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+end
+end
+end
 if text == 'اعدادات الحمايه' then 
 if not msg.Addictive or not msg.Mddictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*۩┊مايمديك .. هـذا الامـر يخـص { '..Controller_Num(8)..' }* ',"md",true)  
@@ -12196,7 +12230,7 @@ end
 if Redis:get(ZELZAL.."ZELZAL:Status:AddMe"..msg.chat_id) then
 StatusAddme = '❬ ✔️ ❭' else StatusAddme = '❬ ❌ ❭'
 end
-local protectionGroup = '\n*۩┊اعدادات حمايه المجموعه\n ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ\n'
+local protectionGroup = '\n*۩┊اعدادات حمايه المجموعه\n ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ \n'
 ..'\n۩┊جلب الرابط ➤ '..Statuslink
 ..'\n۩┊جلب الترحيب ➤ '..StatusWelcome
 ..'\n۩┊الايدي ➤ '..StatusId
@@ -12314,8 +12348,8 @@ end
 if Get_Chat.permissions.can_send_polls then
 polls = '❬ ✔️ ❭' else polls = '❬ ❌ ❭'
 end
-local permissions = '*\n۩┊صلاحيات المجموعه :\nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ'..'\n۩┊ارسال الويب : '..web..'\n۩┊تغيير معلومات المجموعه : '..info..'\n۩┊اضافه مستخدمين : '..invite..'\n۩┊تثبيت الرسائل : '..pin..'\n۩┊ارسال الميديا : '..media..'\n۩┊ارسال الرسائل : '..messges..'\n۩┊اضافه البوتات : '..other..'\n۩┊ارسال استفتاء : '..polls..'*\n\n'
-local TextChat = '*\n۩┊معلومات المجموعه :\nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ'..' \n۩┊عدد الادمنيه : ❬ '..Info_Chats.administrator_count..' ❭\n۩┊عدد المحظورين : ❬ '..Info_Chats.banned_count..' ❭\n۩┊عدد الاعضاء : ❬ '..Info_Chats.member_count..' ❭\n۩┊عدد المقيديين : ❬ '..Info_Chats.restricted_count..' ❭\n۩┊اسم المجموعه : ❬* ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')* ❭*'
+local permissions = '*\n۩┊صلاحيات المجموعه :\nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ '..'\n۩┊ارسال الويب : '..web..'\n۩┊تغيير معلومات المجموعه : '..info..'\n۩┊اضافه مستخدمين : '..invite..'\n۩┊تثبيت الرسائل : '..pin..'\n۩┊ارسال الميديا : '..media..'\n۩┊ارسال الرسائل : '..messges..'\n۩┊اضافه البوتات : '..other..'\n۩┊ارسال استفتاء : '..polls..'*\n\n'
+local TextChat = '*\n۩┊معلومات المجموعه :\nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ '..' \n۩┊عدد الادمنيه : ❬ '..Info_Chats.administrator_count..' ❭\n۩┊عدد المحظورين : ❬ '..Info_Chats.banned_count..' ❭\n۩┊عدد الاعضاء : ❬ '..Info_Chats.member_count..' ❭\n۩┊عدد المقيديين : ❬ '..Info_Chats.restricted_count..' ❭\n۩┊اسم المجموعه : ❬* ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')* ❭*'
 return LuaTele.sendText(msg_chat_id,msg_id, TextChat..permissions,"md",true)
 end
 if text == 'صلاحيات المجموعه' then
@@ -13602,7 +13636,7 @@ LuaTele.sendText(msg_chat_id,msg_id,[[*
 - للخروج من الامر : اضغظ الغاء الامر ᪣
 ٴ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 ↯• ارسـل الـرد سـواء كـان •↯
-┉┉┉┉┉┉┉┉┉┉┉┉
+ »»——- ★ TIGER ★ ——-«« 
 ❨ ملف • ملصق • متحركه • صوره
  • فيديو • بصمه الفيديو • بصمه • صوت • رساله ❩
 
@@ -13901,7 +13935,7 @@ LuaTele.sendText(msg_chat_id,msg_id,[[*
 - للخروج من الامر : اضغظ الغاء الامر ᪣
 ٴ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 ↯• ارسـل الـرد سـواء كـان •↯
-┉┉┉┉┉┉┉┉┉┉┉┉
+ »»——- ★ TIGER ★ ——-«« 
 ❨ ملف • ملصق • متحركه • صوره
  • فيديو • بصمه الفيديو • بصمه • صوت • رساله ❩
 
@@ -14102,7 +14136,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اض�
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n۩┊عليك الاشتراك في قناة البوت لـ استخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(ZELZAL.."ZELZAL:List:Manager"..msg_chat_id.."")
-text = "۩┊قائمـه ردود المدير \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ\n"
+text = "۩┊قائمـه ردود المدير \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ \n"
 for k,v in pairs(list) do
 if Redis:get(ZELZAL.."ZELZAL:Add:Rd:Manager:Gif"..v..msg_chat_id) then
 db = "متحركه 🎭"
@@ -14184,7 +14218,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اض�
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n۩┊عليك الاشتراك في قناة البوت لـ استخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(ZELZAL.."ZELZAL:List:Rd:Sudo")
-text = "\n📝┊قائمة ردود المطور \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ\n"
+text = "\n📝┊قائمة ردود المطور \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ \n"
 for k,v in pairs(list) do
 if Redis:get(ZELZAL.."ZELZAL:Add:Rd:Sudo:Gif"..v) then
 db = "متحركه 🎭"
@@ -14247,7 +14281,7 @@ LuaTele.sendText(msg_chat_id,msg_id,[[*
 ↯┊ارسل لي سواء كان 
 ❨ ملف • ملصق • متحركه • صوره
  • فيديو • بصمه الفيديو • بصمه • صوت • رساله ❩
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ↯┊للخروج ارسل ( الغاء )
  ✓
 *]],"md",true)  
@@ -14267,7 +14301,7 @@ LuaTele.sendText(msg_chat_id,msg_id,[[*
 ↯┊ارسل لي سواء كان 
 ❨ ملف • ملصق • متحركه • صوره
  • فيديو • بصمه الفيديو • بصمه • صوت • رساله ❩
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ↯┊للخروج ارسل ( الغاء )
  ✓
 *]],"md",true)  
@@ -14287,7 +14321,7 @@ LuaTele.sendText(msg_chat_id,msg_id,[[*
 ↯┊ارسل لي سواء كان 
 ❨ ملف • ملصق • متحركه • صوره
  • فيديو • بصمه الفيديو • بصمه • صوت • رساله ❩
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ↯┊للخروج ارسل ( الغاء )
  ✓
 *]],"md",true)  
@@ -14450,7 +14484,7 @@ SilentGroup = 'مكتوم'
 else
 SilentGroup = 'غير مكتوم'
 end
-LuaTele.sendText(msg_chat_id,msg_id,"\n*۩┊معلومات الكشف \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ"..'\n۩┊الحظر العام : '..BanAll..'\n۩┊الحظر : '..BanGroup..'\n۩┊الكتم : '..SilentGroup..'\n۩┊التقييد : '..Restricted..'*',"md",true)  
+LuaTele.sendText(msg_chat_id,msg_id,"\n*۩┊معلومات الكشف \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ "..'\n۩┊الحظر العام : '..BanAll..'\n۩┊الحظر : '..BanGroup..'\n۩┊الكتم : '..SilentGroup..'\n۩┊التقييد : '..Restricted..'*',"md",true)  
 end
 if text and text:match('^كشف القيود @(%S+)$') then
 local UserName = text:match('^كشف القيود @(%S+)$')
@@ -14495,7 +14529,7 @@ SilentGroup = 'مكتوم'
 else
 SilentGroup = 'غير مكتوم'
 end
-LuaTele.sendText(msg_chat_id,msg_id,"\n*۩┊معلومات الكشف \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ"..'\n۩┊الحظر العام : '..BanAll..'\n۩┊الحظر : '..BanGroup..'\n۩┊الكتم : '..SilentGroup..'\n۩┊التقييد : '..Restricted..'*',"md",true)  
+LuaTele.sendText(msg_chat_id,msg_id,"\n*۩┊معلومات الكشف \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ "..'\n۩┊الحظر العام : '..BanAll..'\n۩┊الحظر : '..BanGroup..'\n۩┊الكتم : '..SilentGroup..'\n۩┊التقييد : '..Restricted..'*',"md",true)  
 end
 if text == 'رفع القيود' and msg.reply_to_message_id ~= 0 then
 local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
@@ -15346,7 +15380,7 @@ end
 if text == '😌' or text == '😌😌' or text == '😌😌😌' or text == '😌😌😌😌' then
 return LuaTele.sendText(msg_chat_id,msg_id,'*ع شنو شايف روحك وجه الطاوه ؟!*',"md",true) 
 end
-if text == '😇' or text == '😇😇' or text == '😇😇😇' or text == '😇😇😇??' then
+if text == '😇' or text == '😇😇' or text == '😇😇😇' or text == '😇😇😇😇' then
 return LuaTele.sendText(msg_chat_id,msg_id,'*اته مو ملاك اته جهنم بنفسهه 😂🔥*',"md",true) 
 end
 if text == '🤔' or text == '🤔🤔' then
@@ -15921,7 +15955,7 @@ Bio = InfoUser.bio
 else
 Bio = ''
 end
-local T = '* ❲ مطـور البـوت - 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒔 𝑩𝒐𝒕 ❳*\n*ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n*۩┊الاسـم :* ['..ban.first_name..'](tg://user?id='..ban.id..')\n\n*۩┊البايـو : ['..Bio..'] *'
+local T = '* ❲ مطـور البـوت - 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒔 𝑩𝒐𝒕 ❳*\n*ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n*۩┊الاسـم :* ['..ban.first_name..'](tg://user?id='..ban.id..')\n\n*۩┊البايـو : ['..Bio..'] *'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -16146,7 +16180,7 @@ end
 if text == "سمايلات" or text == "سمايل" then
 if Redis:get(ZELZAL.."ZELZAL:Status:Games"..msg.chat_id) then
 Redis:del(ZELZAL.."ZELZAL:Game:Smile"..msg.chat_id)
-Random = {"🍏","🍎","🍐","🍊","??","🍉","🍇","🍓","🍈","🍒","🍑","🍍","🥥","🥝","🍅","🍆","🥑","🥦","🥒","??","🌽","🥕","🥔","🥖","🥐","🍞","🥨","🍟","🧀","🥚","🍳","🥓","🥩","🍗","🍖","🌭","🍔","🍠","🍕","🥪","🥙","☕️","🥤","🍶","🍺","🍻","🏀","⚽️","🏈","⚾️","🎾","🏐","??","🎱","🏓","??","🥅","🎰","🎮","🎳","🎯","🎲","🎻","🎸","🎺","🥁","🎹","??","🎧","🎤","🎬","??","🎭","🎪","🎟","🎫","🎗","🏵","🎖","🏆","🥌","🛷","🚗","🚌","🏎","🚓","🚑","🚚","🚛","??","⚔","🛡","🔮","🌡","💣","۩","📍","📓","📗","📂","📅","📪","📫","۩","📭","⏰","📺","🎚","☎️","📡"}
+Random = {"🍏","🍎","🍐","🍊","🍋","🍉","🍇","🍓","🍈","🍒","🍑","🍍","🥥","🥝","🍅","🍆","🥑","🥦","🥒","??","🌽","🥕","🥔","🥖","🥐","🍞","🥨","🍟","🧀","🥚","🍳","🥓","🥩","🍗","🍖","🌭","🍔","🍠","🍕","🥪","🥙","☕️","🥤","🍶","🍺","🍻","🏀","⚽️","🏈","⚾️","🎾","🏐","??","🎱","🏓","??","🥅","🎰","🎮","🎳","🎯","🎲","🎻","🎸","🎺","🥁","🎹","??","🎧","🎤","🎬","??","🎭","🎪","🎟","🎫","🎗","🏵","🎖","🏆","🥌","🛷","🚗","🚌","🏎","🚓","🚑","🚚","🚛","??","⚔","🛡","🔮","🌡","💣","۩","📍","📓","📗","📂","📅","📪","📫","۩","📭","⏰","📺","🎚","☎️","📡"}
 SM = Random[math.random(#Random)]
 Redis:set(ZELZAL.."ZELZAL:Game:Smile"..msg.chat_id,SM)
 return LuaTele.sendText(msg_chat_id,msg_id,"۩┊اسرع واحد يدز هذا السمايل ? ~ {`"..SM.."`}","md",true)  
@@ -18748,7 +18782,7 @@ if text == "تاك للبقلبي" or text == "تاك للي فقلبي" or text
   if #heart_list == 0 then
     return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊قلبك فاضي محدش فيه .. متت😹😂*","md")
   elseif #heart_list > 0 then
-    your_heart = "- النـاس الي فـ قلبـك ← ♥️ \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ\n"
+    your_heart = "- النـاس الي فـ قلبـك ← ♥️ \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ \n"
     for k,v in pairs(heart_list) do
     local user_info = LuaTele.getUser(v)
     local name = user_info.first_name
@@ -19476,7 +19510,7 @@ if ChannelJoin(msg) == false then
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/'..Redis:get(ZELZAL..'ZELZAL:Channel:Join')}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n۩┊عليك الاشتراك في قناة البوت لـ استخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
-LuaTele.sendText(msg_chat_id,msg_id,'*۩┊عدد احصائيات البوت الكامله \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ\n۩┊عدد المجموعات : '..(Redis:scard(ZELZAL..'ZELZAL:ChekBotAdd') or 0)..'\n۩┊عدد المشتركين : '..(Redis:scard(ZELZAL..'ZELZAL:Num:User:Pv') or 0)..'*',"md",true)  
+LuaTele.sendText(msg_chat_id,msg_id,'*۩┊عدد احصائيات البوت الكامله \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ \n۩┊عدد المجموعات : '..(Redis:scard(ZELZAL..'ZELZAL:ChekBotAdd') or 0)..'\n۩┊عدد المشتركين : '..(Redis:scard(ZELZAL..'ZELZAL:Num:User:Pv') or 0)..'*',"md",true)  
 end
 if text == 'تغغير كليشه المطور ۩' then
 if not msg.ControllerBot then 
@@ -19535,7 +19569,7 @@ LuaTele.sendText(msg_chat_id,msg_id,[[*
 ↯┊ارسل لي سواء كان 
 ❨ ملف • ملصق • متحركه • صوره
  • فيديو • بصمه الفيديو • بصمه • صوت • رساله ❩
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ↯┊للخروج ارسل ( الغاء )
  ✓
 *]],"md",true)  
@@ -19555,7 +19589,7 @@ LuaTele.sendText(msg_chat_id,msg_id,[[*
 ↯┊ارسل لي سواء كان 
 ❨ ملف • ملصق • متحركه • صوره
  • فيديو • بصمه الفيديو • بصمه • صوت • رساله ❩
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ↯┊للخروج ارسل ( الغاء )
  ✓
 *]],"md",true)  
@@ -19575,7 +19609,7 @@ LuaTele.sendText(msg_chat_id,msg_id,[[*
 ↯┊ارسل لي سواء كان 
 ❨ ملف • ملصق • متحركه • صوره
  • فيديو • بصمه الفيديو • بصمه • صوت • رساله ❩
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ↯┊للخروج ارسل ( الغاء )
  ✓
 *]],"md",true)  
@@ -19617,7 +19651,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اض�
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n۩┊عليك الاشتراك في قناة البوت لـ استخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(ZELZAL.."ZELZAL:List:Rd:Sudo")
-text = "\n📝┊قائمة ردود المطور \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ\n"
+text = "\n📝┊قائمة ردود المطور \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ \n"
 for k,v in pairs(list) do
 if Redis:get(ZELZAL.."ZELZAL:Add:Rd:Sudo:Gif"..v) then
 db = "متحركه 🎭"
@@ -19791,7 +19825,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:BanAll:Groups")
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا يوجد محظورين عام حاليا ,*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه المحظورين عام  \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه المحظورين عام  \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 var(v)
@@ -19818,7 +19852,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:Developers:Groups")
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا يوجد مطورين حاليا ...*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه مطورين البوت \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه مطورين البوت \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -19844,7 +19878,7 @@ local Info_Members = Redis:smembers(ZELZAL.."ZELZAL:DevelopersQ:Groups")
 if #Info_Members == 0 then
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊لا يوجد مطورين حاليا ...*","md",true)  
 end
-ListMembers = '\n*۩┊قائمـه مطورين البوت \nٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ*\n'
+ListMembers = '\n*۩┊قائمـه مطورين البوت \nٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ *\n'
 for k, v in pairs(Info_Members) do
 local UserInfo = LuaTele.getUser(v)
 if UserInfo and UserInfo.username and UserInfo.username ~= "" then
@@ -20757,7 +20791,7 @@ local TextHelp = [[*
 ۩ اذاعه بالتوجيه 
 ۩ اذاعه بالتوجيه خاص 
 ۩ بوت غادر 
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 *]]
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
@@ -20783,7 +20817,7 @@ data = {
 }
 local TextHelp = [[*
 『 اوامر مطور ثانوي البوت 』
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ۩ رفع مطور 
 ۩ تنزيل مطور 
 ۩ المطورين 
@@ -20800,7 +20834,7 @@ local TextHelp = [[*
 ۩ مسح المكتومين 
 ۩ اطلعي 
 ۩ الاحصائيات 
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ۩ تفعيل الردود العامه 
 ۩ تعطيل الردود العامه 
 ۩ اضف رد متعدد 
@@ -20808,7 +20842,7 @@ local TextHelp = [[*
 ۩ الردود المتعدد 
 ۩ اضف رد 
 ۩ مسح رد 
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ۩ اضف رد عام 
 ۩ مسح رد عام 
 ۩ الردود العامه 
@@ -20817,7 +20851,7 @@ local TextHelp = [[*
 ۩ اذاعه خاص 
 ۩ اذاعه بالتوجيه 
 ۩ اذاعه بالتوجيه خاص 
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 *]]
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
@@ -20843,7 +20877,7 @@ data = {
 }
 local TextHelp = [[*
 『 اوامر مطور البوت الاساسي 』
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ۩ حظر عام 
 ۩ كتم عام 
 ۩ قائمـه العام 
@@ -20857,7 +20891,7 @@ local TextHelp = [[*
 ۩ مسح الاساسين 
 ۩ مسح الاساسيات 
 ۩ تحديث الملفات 
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ۩ السيرفر 
 ۩ تحديث السورس 
 ۩ تفعيل البوت الخدمي 
@@ -20873,7 +20907,7 @@ local TextHelp = [[*
 ۩ تنزيل مطور ثانوي 
 ۩ رفع مطوره ثانويه 
 ۩ تنزيل مطوره ثانويه 
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ۩ تفعيل الردود العامه 
 ۩ تعطيل الردود العامه 
 ۩ اضف رد متعدد 
@@ -20890,7 +20924,7 @@ local TextHelp = [[*
 ۩ حذف الاوامر المضافه عام 
 ۩ تعين الايدي عام 
 ۩ حذف الايدي عام 
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ۩ تفعيل الاشتراك الاجباري 
 ۩ تعطيل الاشتراك الاجباري 
 ۩ تغيير الاشتراك الاجباري 
@@ -20906,7 +20940,7 @@ local TextHelp = [[*
 ۩ اذاعه خاص 
 ۩ اذاعه بالتوجيه 
 ۩ اذاعه بالتوجيه خاص 
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 *]]
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
@@ -20939,9 +20973,9 @@ data = {
 }
 }
 local TextHelp = [[*
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ⎚┊اوامـر التسليـة الآخـرى 👯‍♀
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ۩ انا مين 
 ۩ اسمي 
 ۩ صورتي 
@@ -20949,7 +20983,7 @@ local TextHelp = [[*
 ۩ جهاتي 
 ۩ ايدي 
 ۩ قول + الكلمه 
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ۩ نسبه جمالي
 ۩ حروف 
 ۩ معلومة 
@@ -20958,13 +20992,13 @@ local TextHelp = [[*
 ۩ غنيلي 
 ۩ اقتلو - قتل - تخ
 ۩ اتفو - تف 
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ۩ رفع قلبي 
 ۩ تنزيل قلبي 
 ۩ انا قلب مين 
 ۩ تاك لقلبي 
 ۩ فرمت قلبي 
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ۩ تفعيل الزواج 
 ۩ تعطيل الزواج 
 ۩ نصيب - زوجني 
@@ -20973,7 +21007,7 @@ local TextHelp = [[*
 ۩ زوجي 
 ۩ طلقني بالـرد 
 ۩ بوت طلقني 
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 *]]
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
@@ -20985,9 +21019,9 @@ type = 'inline',data = {
 {{text = '۩ القائمـه الرئيسيـه ۩', data = IdUser..'/helpall'},},
 {{text = '۩ مطـور البـوت ۩', url = 't.me/'..UserSudo}, },}}
 local TextHelp = [[*
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ⎚┊قائمـة اوامـر التحشيش 👻
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ۩┊رفـع - تنزيـل  » التـاك
 لـ الاوامـر التـاليـه
 
@@ -21011,7 +21045,7 @@ local TextHelp = [[*
 ۩┊زاحف  » تاك للزواحف
 ۩┊غبي  » تاك للاغبياء
 
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 *]]
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
@@ -21029,7 +21063,7 @@ data = {
 local TextHelp = [[*
 『 اوامـر البحث والتحميل 』
 ⎚┊قائمـة التحميل من مواقع التواصل 
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ۩┊يوتيوب 🎞 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 » يوتيوب
 
 ۩┊انسـتجرام  𝗜𝗻𝘀𝘁𝗮𝗚𝗿𝗮𝗺 » انستا
@@ -21061,7 +21095,7 @@ data = {
 local TextHelp = [[*
 『 اوامـر الخدمات 』
 ⎚┊قائمـة الخدمـات والتـرفيـه 
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ۩┊ريمكسات اغـاني 🎵 » ريمكس
 ۩┊بصمـات ميمـز 🦹🏻‍♂ » ميمز
 ۩┊اشعـار صوتيـة 🎙 » شعر
@@ -21131,9 +21165,9 @@ type = 'inline',data = {
 {{text = '۩ القائمـه الرئيسيـه ۩', data = IdUser..'/helpall'},},
 {{text = '۩ مطـور البـوت ۩', url = 't.me/'..UserSudo}, },}}
 local TextHelp = [[*
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ⎚┊قائمـة العـاب البـوت 🎮
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 
 ۩┊لعبة البنـك الشهيـرة  » بنك
 ۩┊لعبة من سيربح المليون  » المليون
@@ -21154,7 +21188,7 @@ local TextHelp = [[*
 ۩┊لعبه الاسرع  » الاسرع
 ۩┊لعبة السمايلات  » سمايلات
 
-ٴ◈ ━━━━━━━ ⸙ ᴛꞮɢᴇƦ ⸙ ━━━━━━━ ◈ ٴ
+ٴ✩｡:•.───  ❁ TIGER ❁  ───.•:｡✩ 
 ۩┊مجوهراتي ← لعرض عدد الارباح
 ۩┊بيع مجوهراتي ← { العدد } ← لبيع كل مجوهره مقابل {50} رساله
 *]]
@@ -21475,7 +21509,7 @@ elseif Text and Text:match('(%d+)/lock_voicekid') then
 local UserId = Text:match('(%d+)/lock_voicekid')
 if tonumber(IdUser) == tonumber(UserId) then
 Redis:set(ZELZAL.."ZELZAL:Lock:vico"..ChatId,"ked")  
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '•۩| 𝙱𝙰𝙲𝙺 |۩•', data =UserId..'/'.. 'NoNextSeting'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '•۩| 𝙱𝙰??𝙺 |۩•', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"۩┊تم قفـل الاغاني").lockKid, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/lock_gifkid') then
