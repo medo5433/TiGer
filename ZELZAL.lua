@@ -9293,47 +9293,44 @@ end
 LuaTele.sendText(msg_chat_id,msg_id,'\n*۩┊تم ترقيه - ('..y..') ادمنيه *',"md",true)  
 end
 
-if text == 'المالك' then
-if msg.can_be_deleted_for_all_users == false then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n*۩┊عذرا البوت ليس ادمن في المجموعه يرجى ترقيته وتفعيل الصلاحيات له*","md",true)  
+if text == 'المالك' or text == 'المنشئ' then
+if ChannelJoinch(msg) == false then
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(ZELZAL..'Chat:Channel:Join:Name'..msg.chat_id), url = 't.me/'..Redis:get(ZELZAL..'Chat:Channel:Join'..msg.chat_id)}, },}}
+return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
-local Info_Members = LuaTele.getSupergroupMembers(msg_chat_id, "Administrators", "*", 0, 200)
+if ChannelJoin(msg) == false then
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(ZELZAL..'Channel:Join:Name'), url = 't.me/'..Redis:get(ZELZAL..'Channel:Join')}, },}}
+return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
+end
+if msg.can_be_deleted_for_all_users == false then
+return send(msg_chat_id,msg_id,"\n* 𖥔 عذرآ البوت ليس ادمن في المجموعه يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
+end
+local Info_Members = bot.getSupergroupMembers(msg_chat_id, "Administrators", "*", 0, 200)
 local List_Members = Info_Members.members
 for k, v in pairs(List_Members) do
-if Info_Members.members[k].status.luatele == "chatMemberStatusCreator" then
-local UserInfo = LuaTele.getUser(v.member_id.user_id)
-if UserInfo.first_name == "" then
-LuaTele.sendText(msg_chat_id,msg_id,"*۩┊اوبس .. المالك حسابه محذوف*","md",true)  
+if Info_Members.members[k].status.ZELZALbots == "chatMemberStatusCreator" then
+local UserInfo = bot.getUser(v.member_id.user_id)
+if FlterBio(UserInfo.first_name) == "" then
+send(msg_chat_id,msg_id,"* 𖥔 اوبس , المالك حسابه محذوف *","md",true)  
 return false
 end 
-local photo = LuaTele.getUserProfilePhotos(UserInfo.id)
-local InfoUser = LuaTele.getUserFullInfo(UserInfo.id)
+local photo = bot.getUserProfilePhotos(UserInfo.id)
+local InfoUser = bot.getUserFullInfo(UserInfo.id)
 if InfoUser.bio then
 Bio = InfoUser.bio
 else
 Bio = ''
 end
 if photo.total_count > 0 then
-local TestText = "*•• معلومـات المـالك ••* \n\n*۩┊الاسـم :* ["..UserInfo.first_name.."](tg://user?id="..UserInfo.id..")\n\n*۩┊البايـو : ["..Bio.."] *"
-keyboardd = {} 
-keyboardd.inline_keyboard = {
-{
-{text = '۩ مطـور البـوت ۩', url = 't.me/'..UserSudo},
-},
-}
+local TestText = "*↪️ ᴏᴡɴᴇʀ ɢʀᴏᴜᴘ ♯\n▷ɴᴀᴍᴇ ᴏᴡɴᴇʀ ->* ["..FlterBio(UserInfo.first_name).."](tg://user?id="..UserInfo.id..")\n*▷ʙɪᴏ ᴏᴡɴᴇʀ -> "..Bio.." *"
 local msg_id = msg.id/2097152/0.5 
-return https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+return https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown')  
 else
-local TestText = "*•• معلومـات المـالك ••* \n\n*۩┊الاسـم :* ["..UserInfo.first_name.."](tg://user?id="..UserInfo.id..")\n\n*۩┊البايـو : ["..Bio.."] *"
-keyboardd = {} 
-keyboardd.inline_keyboard = {
-{
-{text = '۩ مطـور البـوت ۩', url = 't.me/'..UserSudo},
-}, 
-}
+local TestText = "*↪️ ᴏᴡɴᴇʀ ɢʀᴏᴜᴘ ♯\n▷ɴᴀᴍᴇ ᴏᴡɴᴇʀ ->* ["..FlterBio(UserInfo.first_name).."](tg://user?id="..UserInfo.id..")\n*▷ʙɪᴏ ᴏᴡɴᴇʀ -> "..Bio.." *"
 local msg_id = msg.id/2097152/0.5 
-return https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+return https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id.."&parse_mode=markdown")
 end
+
 end
 end
 end
@@ -9978,14 +9975,8 @@ end
 if tonumber(Message_Reply.sender.user_id) == tonumber(5589635882) or tonumber(Message_Reply.sender.user_id) == tonumber(925972505) or tonumber(Message_Reply.sender.user_id) == tonumber(2095357462) then
 return LuaTele.sendText(msg_chat_id,msg_id,"*يحمـار دا مبرمج السورس ممكن يفشخني انا وانتـه 😂😞*","md",true)  
 end
-if tonumber(Message_Reply.sender.user_id) == tonumber(5552799584) or tonumber(Message_Reply.sender.user_id) == tonumber(925972505) or tonumber(Message_Reply.sender.user_id) == tonumber(2095357462) then
-return LuaTele.sendText(msg_chat_id,msg_id,"*يحمـار دا مبرمج ادوكس ممكن يفشخني انا وانتـه 😂😞*","md",true)  
-end
-if tonumber(Message_Reply.sender.user_id) == tonumber(5634805056) then
-return LuaTele.sendText(msg_chat_id,msg_id,"*يحمـار دا مبرمج زوهاري السـورس 😹😞*","md",true)  
-end
-if tonumber(Message_Reply.sender.user_id) == tonumber(5424180506) or tonumber(Message_Reply.sender.user_id) == tonumber(925972505) or tonumber(Message_Reply.sender.user_id) == tonumber(2095357462) then
-return LuaTele.sendText(msg_chat_id,msg_id,"*يحمـار دا مبرمج  ايرور ممكن يفشخني انا وانتـه 😂😞*","md",true)  
+if tonumber(Message_Reply.sender.user_id) == tonumber(5589635882) then
+return LuaTele.sendText(msg_chat_id,msg_id,"*يحمـار دي مطـورة السـورس 😹😞*","md",true)  
 end
 if tonumber(Message_Reply.sender.user_id) == tonumber(ZELZAL) then
 return LuaTele.sendText(msg_chat_id,msg_id,"*يخربيت الضحك عاوز يقتل البوت 🙂😂😂*","md",true)  
@@ -10011,17 +10002,11 @@ local bain = LuaTele.getUser(msg.sender.user_id)
 if tonumber(Message_Reply.sender.user_id) == tonumber(msg.sender.user_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"*⏏️| ايا مطـي .. تريـد تنتحـر ؟!*","md",true)  
 end
-if tonumber(Message_Reply.sender.user_id) == tonumber( 5424180506) then
-return LuaTele.sendText(msg_chat_id,msg_id,"*يحمـار دا المبرمج ايرور مكن يفشخني انا وانتـه 😂😞*","md",true)  
+if tonumber(Message_Reply.sender.user_id) == tonumber(5589635882) then
+return LuaTele.sendText(msg_chat_id,msg_id,"*يحمـار دا مبرمج السورس ممكن يفشخني انا وانتـه 😂😞*","md",true)  
 end
-if tonumber(Message_Reply.sender.user_id) == tonumber( 5552799584) then
-return LuaTele.sendText(msg_chat_id,msg_id,"*يحمـار دا مبرمج ادوكس ممكن يفشخني انا وانتـه 😂😞*","md",true)  
-end
-if tonumber(Message_Reply.sender.user_id) == tonumber( 5589635882) then
-return LuaTele.sendText(msg_chat_id,msg_id,"*يحمـار دا المبرمج ميدو ممكن يفشخني انا وانتـه 😂😞*","md",true)  
-end
-if tonumber(Message_Reply.sender.user_id) == tonumber(5634805056) then
-return LuaTele.sendText(msg_chat_id,msg_id,"*يحمـار دا المبرمج يوصف اسـورس 😂😞 تفو عليك انته*","md",true)  
+if tonumber(Message_Reply.sender.user_id) == tonumber(5589635882) then
+return LuaTele.sendText(msg_chat_id,msg_id,"*يحمـار دي مطـورة السـورس 😹😞 تفو عليك انته*","md",true)  
 end
 if tonumber(Message_Reply.sender.user_id) == tonumber(ZELZAL) then
 return LuaTele.sendText(msg_chat_id,msg_id,"*يخربيت الضحك عاوز يتف علي البوت 🙂😂😂*","md",true)  
@@ -10168,7 +10153,7 @@ Abs = math.random(2,27);
 local Text ='*۩┊لـو خيـروك  ⁉️🌉*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/SourceSaidi/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
+https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/SourceZELZAL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 if text == "افتار بنت" or text == "افتار بنات" then 
 Abs = math.random(2,63); 
@@ -12158,8 +12143,8 @@ end
 if text == '〘 مبرمج السورس 〙' or text == 'مبرمج السورس' or text == 'ميدو' or text == 'محمد' or text == 'اليوت' then  
 local UserId_Info = bot.searchPublicChat("U_Y_3_M")
 if UserId_Info.id then
-local  ban = bot.getUser(UserId_Info.id)
-local InfoUser = bot.getUserFullInfo(UserId_Info.id)
+local  ban ='bot.getUser(UserId_Info.id)
+local InfoUser = 'bot.getUserFullInfo(UserId_Info.id)
 if InfoUser.bio then
 Bio = InfoUser.bio
 else
@@ -14786,11 +14771,11 @@ end
 if text == "انا مين" or text == 'مين انا' then
 if msg.sender.user_id == 5589635882 then
 return LuaTele.sendText(msg_chat_id,msg_id,'*- حبيبي انتا ميدو مبرمج السورس 💕🌚*',"md",true) 
-elseif msg.sender.user_id ==5424180506 then
+elseif msg.sender.user_id ==5424165506 then
 return LuaTele.sendText(msg_chat_id,msg_id,'*- حبيبي انتا ايرور مبرمج السورس 💕🌚*',"md",true) 
 elseif msg.sender.user_id ==5634805056 then
 return LuaTele.sendText(msg_chat_id,msg_id,'*- حبيبي انتا زوهاري مبرمج السورس 💕🌚*',"md",true)
-elseif msg.sender.user_id == 5552799584 then
+elseif msg.sender.user_id == 5553799584 then
 return LuaTele.sendText(msg_chat_id,msg_id,'*- حبيبي انتا ادوكس مبرمج السورس 💕🌚*',"md",true) 
 elseif msg.sender.user_id == Sudo_Id then
 return LuaTele.sendText(msg_chat_id,msg_id,'*- يـايمـه انتـه العشـق مالـي مطـوري الغـالي 💞😻*',"md",true) 
@@ -14908,10 +14893,7 @@ local T =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '˹  𝙼𝙴𝙳𝙾  ⁦. 𓌗', url = "https://t.me/ U_Y_3_M"},{text = '˹  𝚉𝙾𝙷𝙰𝚁𝚈⁦. 𓌗', url = "https://t.me/Z0HARY"}
-},
-{
-{text = '˹  𝙰𝙳𝙾𝙺𝚂 ⁦. 𓌗', url = "https://t.me/PTPPE"},{text = '˹  𝙴𝚁𝙾𝚁𝚁 ⁦. 𓌗', url = "https://t.me/K_1_1_0"}
+{text = '˹  𝙼𝙴𝙳𝙾  ⁦. 𓌗', url = "https://t.me/U_Y_3_M"},
 },
 {
 {text = '˹ TIGER ♞ SOURCE .', url = "https://t.me/TGe_R"}
