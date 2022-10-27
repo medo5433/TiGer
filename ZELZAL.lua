@@ -9294,25 +9294,55 @@ end
 LuaTele.sendText(msg_chat_id,msg_id,'\n*۩┊تم ترقيه - ('..y..') ادمنيه *',"md",true)  
 end
 
-if text == 'المالك' then
+if text == 'المالك' or text == 'المنشئ' then
 if msg.can_be_deleted_for_all_users == false then
-return send(msg_chat_id,msg_id,"\n*۩عذرآ البوت ليس ادمن في الجروب يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n*✘︙ عذرآ البوت ليس ادمن في  الجروب يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
+end
+if ChannelJoin(msg) == false then
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/'..Redis:get(TheTTTHK ..'Channel:Join')}, },}}
+return LuaTele.sendText(msg.chat_id,msg.id,'*\n✘︙ عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 local Info_Members = LuaTele.getSupergroupMembers(msg_chat_id, "Administrators", "*", 0, 200)
 local List_Members = Info_Members.members
 for k, v in pairs(List_Members) do
 if Info_Members.members[k].status.luatele == "chatMemberStatusCreator" then
-local UserInfo = LuaTele.getUser(v.member_id.user_id)
-if UserInfo.first_name == "" then
-send(msg_chat_id,msg_id,"*۩اوبس , المالك حسابه محذوف *","md",true)  
+local  ban = LuaTele.getUser(v.member_id.user_id)
+if  ban.first_name == "" then
+LuaTele.sendText(msg_chat_id,msg_id,"*✘︙ اوبس , المالك حسابه محذوف *","md",true)  
 return false
-end
-if UserInfo.username then
-Creator = "*۩مالك الجروب : @"..UserInfo.username.."*\n"
+end 
+local photo = LuaTele.getUserProfilePhotos( ban.id)
+local  bain = LuaTele.getUserFullInfo(Sudo_Id)
+if  bain.bio then
+Bio =  bain.bio
 else
-Creator = "۩مالك الجروب : *["..UserInfo.first_name.."](tg://user?id="..UserInfo.id..")\n"
+Bio = 'لا يوجد'
 end
-return send(msg_chat_id,msg_id,Creator,"md",true)  
+if ban.username then
+Creator = "* "..ban.first_name.."*\n"
+else
+Creator = "* ["..ban.first_name.."](tg://user?id="..ban.id..")*\n"
+end
+if ban.first_name then
+Creat = " "..ban.first_name.." "
+else
+Creat = " Developers Bot \n"
+end
+if photo.total_count > 0 then
+local TestText = "  ‹[ Owner Groups ]›\n— — — — — — — — —\n ✘︙*Owner Name* :  [".. ban.first_name.."](tg://user?id=".. ban.id..")\n✘︙ *Owner Bio* : [‹[ "..Bio.." ]›]"
+keyboardd = {} 
+keyboardd.inline_keyboard = {
+{
+{text = Creat, url = "https://t.me/"..ban.username..""},
+},
+}
+local msg_id = msg.id/2097152/0.5 
+return https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+else
+local TestText = "- معلومات المالك : \n\n- [".. ban.first_name.."](tg://user?id=".. ban.id..")\n \n ["..Bio.."]"
+local msg_id = msg.id/2097152/0.5 
+return https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id.."&parse_mode=markdown")
+end
 end
 end
 end
@@ -12122,8 +12152,8 @@ data = {
 }
 return LuaTele.sendText(msg_chat_id, msg_id, '*۩┊اوامر التفعيل والتعطيل *', 'md', false, false, false, false, reply_markup)
 end  
-if text == 'ميرو' or text == 'mero' then  
-local UserId_Info = LuaTele.searchPublicChat("U_Y_3_M")
+if text == 'مبرمج السورس' or text == 'ميدو' then  
+local UserId_Info = LuaTele.searchPublicChat("G8AZAAL")
 if UserId_Info.id then
 local  ban = LuaTele.getUser(UserId_Info.id)
 local  bain = LuaTele.getUserFullInfo(UserId_Info.id)
@@ -12139,11 +12169,11 @@ Creat = " Developers Bot \n"
 end
 local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
 if photo.total_count > 0 then
-local TestText = "  ❲ َِ𝐃𝐄𝐕 𝐌𝐄𝐃𝐎 ,❳\nᥫ᭡\n ⌔ *ًًًًٍٍٍٍ ٍٍّّ𝗡ّّ𝗮ِِّّ𝗺ََِِ𝗲ᥫ᭡* :  [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n⌔  * ًًٍٍ𝗕ٍٍَ𝗶ُُ𝗼 ᥫ᭡* : [❲ "..Bio.." ❳]"
+local TestText = "  ❲ َِ ََِِ⁨𝐒𝐎𝐔𝐑𝐂𝐄 𝐓𝐈𝐆𝐄𝐑  ,❳\nᥫ᭡\n ⌔ *ժᥱ᥎ ꪀᥲ️ꪔᥱ* :  [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n⌔  *ժᥱ᥎ ႦᎥ᥆* : [❲ "..Bio.." ❳]"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = Creat, url = "https://t.me/"..ban.username..""},
+{text = 'ِ𝙳𝙴𝚅 𝙼𝙴𝙳𝙾🐯↺★  .', url = 't.me/U_Y_3_M'}, 
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -12153,6 +12183,9 @@ local TestText = "- معلومات المطور: \\nn: name Dev . [".. ban.first
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
+{text = 'ِ𝙳𝙴𝚅 𝙼𝙴𝙳𝙾🐯↺★  .', url = 't.me/U_Y_3_M'}, 
+},
+{
 {text = Creat, url = "https://t.me/"..ban.username..""},
 },
 }
@@ -12160,6 +12193,63 @@ local msg_id = msg.id/2097152/0.5
  https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
 end
 end
+end
+
+if text == 'يوصف' or text == 'زوهاري' then  
+local Get_Chat = LuaTele.getChat(msg_chat_id)
+local Info_Chats = LuaTele.getSupergroupFullInfo(msg_chat_id)
+local bains = LuaTele.getUser(msg.sender.user_id)
+if bains.first_name then
+klajq = '*['..bains.first_name..'](tg://user?id='..bains.id..')*'
+else
+klajq = 'لا يوجد'
+end
+if bains.username then
+basgk = ' '..bains.username..' '
+else
+basgk = 'لا يوجد'
+end
+local czczh = '*'..bains.first_name..'*'
+local reply_markup = LuaTele.replyMarkup{
+type = 'inline',
+data = {
+{
+{text = czczh, url = "https://t.me/"..bains.username..""},
+},
+{
+{text = Get_Chat.title, url = Info_Chats.invite_link.invite_link}, 
+},
+}
+}
+LuaTele.sendText(5634805056,0,'*\n⌔  مرحباً عزيزي المبرمج يوصف \nشخص ما يحتاج الي مساعده\n⩹━━━━ََِِ⁨𝐓𝐈𝐆𝐄𝐑 𝐒𝐎𝐔𝐑𝐂𝐄  ,━━━━⩺ \n⌔  اسمه ↫ '..klajq..' \n⌔  ايديه ↫  : '..msg.sender.user_id..'\n⌔  - معرفة '..basgk..' \n*',"md",false, false, false, false, reply_markup)
+end
+if text == 'مزعج' or text == 'ميدو' then  
+local Get_Chat = LuaTele.getChat(msg_chat_id)
+local Info_Chats = LuaTele.getSupergroupFullInfo(msg_chat_id)
+local bains = LuaTele.getUser(msg.sender.user_id)
+if bains.first_name then
+klajq = '*['..bains.first_name..'](tg://user?id='..bains.id..')*'
+else
+klajq = 'لا يوجد'
+end
+if bains.username then
+basgk = ' '..bains.username..' '
+else
+basgk = 'لا يوجد'
+end
+local czczh = '*'..bains.first_name..'*'
+local reply_markup = LuaTele.replyMarkup{
+type = 'inline',
+data = {
+{
+{text = czczh, url = "https://t.me/"..bains.username..""},
+},
+{
+{text = Get_Chat.title, url = Info_Chats.invite_link.invite_link}, 
+},
+}
+}
+LuaTele.sendText(5589635882,0,'*\n⌔  مرحباً عزيي المبرمج ميدو \nشخص ما يحتاج الي مساعده\n⩹━━━━ََِِ⁨𝐓𝐈𝐆𝐄𝐑 𝐒𝐎𝐔𝐑𝐂𝐄  ,━━━━⩺ \n⌔  اسمه ↫ '..klajq..' \n⌔  ايديه ↫  : '..msg.sender.user_id..'\n⌔  - معرفة '..basgk..' \n*',"md",false, false, false, false, reply_markup)
 end
 if text == 'اعدادات الحمايه' then 
 if not msg.Addictive or not msg.Mddictive then
@@ -15862,55 +15952,56 @@ Fasmee = "*۩ اسمـك :*  ["..ban.first_name.."](tg://user?id="..ban.id..")  
 return LuaTele.sendText(msg_chat_id,msg_id,Fasmee,"md",true)   
 end
 if text == "بوت" then
-local ban = LuaTele.getUser(msg.sender.user_id)
-local NamesBot = (Redis:get(ZELZAL.."ZELZAL:Name:Bot") or "بووت")
-Botyname = "*يـالبيـه*  ["..ban.first_name.."](tg://user?id="..ban.id..")  *اسمي الكيوت "..NamesBot.." 🧸♥️*"
-return LuaTele.sendText(msg_chat_id,msg_id,Botyname,"md",true)   
-end
-if text == "البوت" then
-local NamesBot = (Redis:get(ZELZAL.."ZELZAL:Name:Bot") or "روبوت")
-local BotName = {
-'*اسمي '..NamesBot..' يا قلبي 😍💜*',
-'*اسمي '..NamesBot..' يا روحي 🙈❤️*',
-'*اسمي '..NamesBot..' يا عمري 🥰🤍*',
-'*اسمي '..NamesBot..' يا قمر 🐼💚*',
-'*اسمي '..NamesBot..' يا مزه 😘🍒*',
-'*اسمي '..NamesBot..' يعم 😒*',
-'*اسمي الكيوت '..NamesBot..' حبي 🌝💙*',
-'*اسمي '..NamesBot..' يا حياتي 🌚❤️*',
-'*اسمي '..NamesBot..' يبرو 😎🤘*',
-}
-return LuaTele.sendText(msg_chat_id,msg_id,BotName[math.random(#BotName)],"md",true)   
-end
-if text == (Redis:get(ZELZAL.."ZELZAL:Name:Bot") or "بووت") then
-local photo = LuaTele.getUserProfilePhotos(ZELZAL)
-local ban = LuaTele.getUser(ZELZAL)
-for Name_User in string.gmatch(ban.first_name, "[^%s]+" ) do
-ban.first_name = Name_User
-break
-end 
-local NamesBot = (Redis:get(ZELZAL.."ZELZAL:Name:Bot") or "بووت")
-local BotName = {
-'نعم يا روح 💘 '..NamesBot..'',
-'نعم يا قلب 💞 '..NamesBot..'',
-'تع اشرب شاي 🌝💙',
-'وياك '..NamesBot..' يالبيه 🧚‍♀💞',
-'ياقلب '..NamesBot..' انته 🌚♥️',
-'انا '..NamesBot..' احسن البوتات 🌝💙',
-'نعم 🍒🤍'
-}
-NamesBots = BotName[math.random(#BotName)]
-if photo.total_count > 0 then
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = NamesBots, url = 't.me/TGe_R'}, 
-},
-}
-msgg = msg.id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id.."&photo=".. URL.escape(NamesBots).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
-end
+if Redis:get(ZELZAL.."name bot type : ") == "photo" then
+  
+    local photo = LuaTele.getUserProfilePhotos(ZELZAL)
+    local UserInfo = LuaTele.getUser(ZELZAL)
+    local Name_User = UserInfo.first_name
+    local Name_dev = LuaTele.getUser(Sudo_Id).first_name
+    local UName_dev = LuaTele.getUser(Sudo_Id).username
+    local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
+      {
+        {text = Name_User, url = "t.me/"..UserInfo.username}
+      },
+      {
+        {text = Name_dev, url = "t.me/"..UName_dev }
+      }
+    }
+    }
+    
+    if photo.total_count > 0 then
+      local NamesBot = (Redis:get(ZELZAL.."Name:Bot") or "كيوجا")
+      local BotName = {
+      "اسمي "..NamesBot.." يبن العاميه",
+      "يارب يكون موضوع مهم بس",
+      "هو يوم مهبب انا عارف..عاوز اي ؟",
+      "اسمي "..NamesBot.." يا كفيف",
+      "مش شايف اسمي ولا اي ؟"
+      }
+    return LuaTele.sendPhoto(msg.chat_id, msg.id, photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id,BotName[math.random(#BotName)], "md", true, nil, nil, nil, nil, nil, nil, nil, nil, reply_markup )
+    else
+      local NamesBot = (Redis:get(ZELZAL.."Name:Bot") or "كيوجا")
+      local BotName = {
+      "اسمي "..NamesBot.." يبن العاميه",
+      "يارب يكون موضوع مهم بس",
+      "هو يوم مهبب انا عارف..عاوز اي ؟",
+      "اسمي "..NamesBot.." يا كفيف",
+      "مش شايف اسمي ولا اي ؟"
+      }
+    return LuaTele.sendText(msg_chat_id,msg_id,BotName[math.random(#BotName)],"md") 
+    end 
+    end
+          local NamesBot = (Redis:get(ZELZAL.."Name:Bot") or "كيوجا")
+      local BotName = {
+      "اسمي "..NamesBot.." يبن العاميه",
+      "يارب يكون موضوع مهم بس",
+      "هو يوم مهبب انا عارف..عاوز اي ؟",
+      "اسمي "..NamesBot.." يا كفيف",
+      "مش شايف اسمي ولا اي ؟"
+      }
+    return LuaTele.sendText(msg_chat_id,msg_id,BotName[math.random(#BotName)],"md") 
+
+  end
 if text == 'المطور' or text == 'مطور' then
 local TextingDevZELZAL = Redis:get(ZELZAL..'ZELZAL:GetTexting:DevZELZAL')
 if TextingDevZELZAL then 
@@ -19163,53 +19254,56 @@ end
 
 if text == '/start' then
 Redis:sadd(ZELZAL..'Num:User:Pv',msg.sender.user_id)  
-if not msg.Devss then
-local photo = LuaTele.getUserProfilePhotos(ZELZAL)
+if not msg.ControllerBot then
 if not Redis:get(ZELZAL.."Start:Bot") then
-local CmdStart = '*\n ۩أهلآ بك في بوت '..(Redis:get(ZELZAL.."Name:Bot") or "تايـجر")..
-'\n⚙️╢• وظيفتي حماية المجموعات '..
-'\n✅╢• لتفعيل البوت عليك اتباع مايلي .'..
-'\n➕╢• أضِف البوت إلى مجموعتك '..
-'\n⚡️╢• ارفعهُ » مشرف + اكتب تفعيل '..
-'\n⬆️╢• سيتم ترقيتك مالك في البوت '..
-'\n☑️╢• لكي أعمل معك بشكل صحيح '.. 
-'\n🔰╢• تأكد » من اعطائي حذف الرسائل '..
-'\n🔰╢• تأكد » من تفعيل الألعاب '..
-'\n🔰╢• تأكد » من تفعيل الرفع '..
-'\n🔰╢• تأكد » من تفعيل ردود السورس  '..
-'\n🔰╢• ارسل كلمة { /keb }  لاظهار الكيبورد '..
-'\n🔰╢• مـطـور الـبـوت 🔰{@'..UserSudo..'}*'
+local photo = LuaTele.getUserProfilePhotos(ZELZAL)
+local CmdStart = '*\n⌔ أهلآ بك في بوت '..(Redis:get(ZELZAL.."Name:Bot") or "كيوجا")..
+'\n⌔ اختصاص البوت حماية المجموعات'..
+'\n⌔ لتفعيل البوت عليك اتباع مايلي ...'..
+'\n⌔ اضف البوت الى مجموعتك'..
+'\n⌔ ارفعه ادمن مشرف'..
+'\n⌔  لتشغيل كيبورد التسليه { /tiger } ارسل كلمة'..
+'\n⌔ مطور البوت ← {'..UserSudo..'}*'
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
+{text = 'نبذه🕸️', callback_data ='/zxhaut'},{text = 'ٓ♻️ حول ',  callback_data ='/lhaui'},
 },
 {
-{text = ' ۩𝑻𝑰𝑮𝑬𝑹 𝑺𝑶𝑼𝑹𝑪𝑬   ۩️', url = 't.me/'..chsource..''}, 
+{text = '- اضف البوت لمجموعتك ♡,', url = 't.me/'..UserBot..'?startgroup=new'}, 
+},
+{
+{text = '◜ 𝚜𝚘𝚞𝚛𝚌𝚎 𝚔𝚢𝚘𝚐𝚊◞', url = 't.me/'..chsource..''}, 
 },
 }
 }
-LuaTele.sendPhoto(msg.chat_id, msg.id, photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id,CmdStart,"md", true, nil, nil, nil, nil, nil, nil, nil, nil, reply_markup )
+return LuaTele.sendPhoto(msg.chat_id, msg.id, photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id,CmdStart,"md", true, nil, nil, nil, nil, nil, nil, nil, nil, reply_markup )
 else
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
+{text = 'نبذه🕸️', callback_data ='/zxhaut'},{text = 'ٓ♻️ حول ',  callback_data ='/lhaui'},
 },
 {
-{text = ' ۩𝑻𝑰𝑮𝑬𝑹 𝑺𝑶𝑼𝑹𝑪𝑬   ۩️', url = 't.me/'..chsource..''}, 
+{text = '- اضف البوت لمجموعتك ♡,', url = 't.me/'..UserBot..'?startgroup=new'}, 
+},
+{
+{text = '◜ 𝚜𝚘𝚞𝚛𝚌𝚎 ◞', url = 't.me/'..chsource..''}, 
 },
 }
 }
-LuaTele.sendPhoto(msg.chat_id, msg.id, photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id,Redis:get(ZELZAL.."Start:Bot"),"md", true, nil, nil, nil, nil, nil, nil, nil, nil, reply_markup )
+return send(msg_chat_id,msg_id,Redis:get(ZELZAL.."Start:Bot"),"md",false, false, false, false, reply_markup)
 end
 else
 local reply_markup = LuaTele.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
 data = {
 {
-{text = 'تفعيل التواصل ??',type = 'text'},{text = 'تعطيل التواصل ۩', type = 'text'},
+{text = 'مبرمج السورس ۩',type = 'text'},
+},
+{
+{text = 'تفعيل التواصل',type = 'text'},{text = 'تعطيل التواصل ۩', type = 'text'},
 },
 {
 {text = 'تفعيل البوت الخدمي ۩',type = 'text'},{text = 'تعطيل البوت الخدمي ۩', type = 'text'},
@@ -19326,7 +19420,7 @@ end
 Redis:set(Fast.."name bot type -> ", "photo")
 send(msg_chat_id,msg_id,'\n*۩ تم تفعيل رد البوت بصوره * ',"md",true)  
 end
-if text == "تعطيل البوت بصوره" or text == "تعطيل البوت بالصورة" or text == "تعطيل البوت بالصوره" then
+if text == "تعطيل البوت بصوره" or text == "تفعيل البوت بالصورة" or text == "تعطيل البوت بالصوره" then
 if not msg.Devss then
 send(msg_chat_id,msg_id,'\n*۩ هذا الامر يخص  '..Controller_Num(2)..' * ',"md",true)  
 end
@@ -19767,16 +19861,17 @@ end
 Redis:set(ZELZAL.."ZELZAL:TwaslBot",true) 
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊تم تفعيل التواصل داخل البوت* ","md",true)
 end
-if text == 'تفعيل النسخه التلقائيه ۩' then  
+if TextMsg == 'التواصل' then
 if not msg.ControllerBot then 
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*۩┊مايمديك .. هـذا الامـر يخـص { '..Controller_Num(1)..' }* ',"md",true)  
+return send(msg_chat_id,msg_id,'\n*⌔ هذا الامر يخص  '..Controller_Num(1)..' * ',"md",true)  
 end
 if ChannelJoin(msg) == false then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/'..Redis:get(ZELZAL..'ZELZAL:Channel:Join')}, },}}
-return LuaTele.sendText(msg.chat_id,msg.id,'*\n۩┊عليك الاشتراك في قناة البوت لـ استخدام الاوامر*',"md",false, false, false, false, reply_markup)
+local chinfo = Redis:get(ZELZAL.."ch:admin")
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = chinfo}, },}}
+return send(msg.chat_id,msg.id,'*\n⌔ عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
-Redis:del(ZELZAL.."AutoFile")
-return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊تم تفعيل النسخـه الاحتياطيـه التلقـائيـه .. بنجـاح ✓*") 
+Redis:set(ZELZAL.."TwaslBot",true) 
+return send(msg_chat_id,msg_id,"⌔ تم تفعيل التواصل داخل البوت ","md",true)
 end
 if text == 'تعطيل النسخه التلقائيه ۩' then  
 if not msg.ControllerBot then 
@@ -20192,7 +20287,7 @@ if Text and Text:match('(%d+)/delamrredis') then
 local listYt = Text:match('(%d+)/delamrredis')
 if tonumber(listYt) == tonumber(IdUser) then
 Redis:del(ZELZAL.."ZELZAL:Redis:Id:Group"..ChatId..""..IdUser) 
-Redis:del(ZELZAL.."MEZO1:Set:Rd"..IdUser..":"..ChatId)
+Redis:del(ZELZAL.."ZELZAL1:Set:Rd"..IdUser..":"..ChatId)
 Redis:del(ZELZAL.."ZELZAL:Set:Manager:rd"..IdUser..":"..ChatId)
 Redis:del(ZELZAL.."ZELZAL:Set:Rd"..IdUser..":"..ChatId)
 LuaTele.editMessageText(ChatId,Msg_id,"*۩┊تـم الغـاء الامـر . . بنجـاح*", 'md')
@@ -20201,7 +20296,7 @@ end
 if Text and Text:match('(%d+)/chengreplygg') then
 local listYt = Text:match('(%d+)/chengreplygg')
 if tonumber(listYt) == tonumber(IdUser) then
-Redis:set(ZELZAL.."MEZO1:Set:Rd"..IdUser..":"..ChatId, "true")
+Redis:set(ZELZAL.."ZELZAL1:Set:Rd"..IdUser..":"..ChatId, "true")
 LuaTele.editMessageText(ChatId,Msg_id,"*۩┊ ارسـل لـي الـرد الان*", 'md', true)
 end
 end
