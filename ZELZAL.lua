@@ -19168,7 +19168,7 @@ local CmdStart = '*\n ۩أهلآ بك في بوت '..(Redis:get(black.."Name:Bot
 '\n ۩ارفعه ادمن مشرف'..
 '\n ۩ارسل كلمة { تفعيل } ليتم تفعيل الجروب'..
 '\n ۩مطور البوت  ۩ {@'..UserSudo..'}*'
-'\n ۩ ارسل كلمة { /keb } لاظهار الكيبورد'..
+'\n ۩ارسل كلمة { /keb } لاظهار الكيبورد'..
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
