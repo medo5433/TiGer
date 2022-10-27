@@ -7297,11 +7297,11 @@ if not msg.ControllerBot then
 return send(msg_chat_id,msg_id,'\n*۩هذا الامر يخص  '..Controller_Num(1)..' * ',"md",true)  
 end
 if ChannelJoin(msg) == false then
-local chinfo = Redis:get(black.."ch:admin")
+local chinfo = Redis:get(ZELZAL.."ch:admin")
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = chinfo}, },}}
 return send(msg.chat_id,msg.id,'*\n۩عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
-Redis:set(black.."TwaslBot",true) 
+Redis:set(ZELZAL.."TwaslBot",true) 
 return send(msg_chat_id,msg_id,"۩تم تفعيل التواصل داخل البوت ","md",true)
 end
 
@@ -10289,13 +10289,13 @@ LuaTele.sendText(msg_chat_id,msg_id,br,"md",true)
 end 
 if text and text:match("^احسب (.*)$") then
 local Textage = text:match("^احسب (.*)$")
-u , res = https.request('https://black-source.xyz/BlackTeAM/Calculateage.php?age='..Textage)
+u , res = https.request('https://ZELZAL-source.xyz/ZELZALTeAM/Calculateage.php?age='..Textage)
 JsonSInfo = JSON.decode(u)
 local InfoGet = JsonSInfo['result']['info']
 LuaTele.sendText(msg.chat_id,msg.id,InfoGet,"md", true)
 end
 if Redis:get(ZELZAL.."zhrfa"..msg.sender.user_id) == "sendzh" then
-zh = https.request('https://black-source.xyz/BlackTeAM/frills.php?en='..URL.escape(text)..'')
+zh = https.request('https://ZELZAL-source.xyz/ZELZALTeAM/frills.php?en='..URL.escape(text)..'')
 zx = JSON.decode(zh)
 t = "\n • قائمـه الزخرفه \nٴ •ٴ≪━━━━━━━━━━━━≫ٴ •○ٴ \n"
 i = 0
@@ -10312,7 +10312,7 @@ Redis:set(ZELZAL.."zhrfa"..msg.sender.user_id,"sendzh")
 end
 if text and text:match("^زخرفه (.*)$") then
 local TextZhrfa = text:match("^زخرفه (.*)$")
-zh = https.request('https://black-source.xyz/BlackTeAM/frills.php?en='..URL.escape(TextZhrfa)..'')
+zh = https.request('https://ZELZAL-source.xyz/ZELZALTeAM/frills.php?en='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
 t = "\n • قائمـه الزخرفه \nٴ •ٴ≪━━━━━━━━━━━━≫ٴ •○ٴ \n"
 i = 0
@@ -12122,40 +12122,25 @@ data = {
 }
 return LuaTele.sendText(msg_chat_id, msg_id, '*۩┊اوامر التفعيل والتعطيل *', 'md', false, false, false, false, reply_markup)
 end  
-if text == '〘 مبرمج السورس 〙' or text == 'مبرمج السورس' or text == 'ميدو' or text == 'محمد' or text == 'اليوت' then  
-local UserId_Info = bot.searchPublicChat("U_Y_3_M")
-if UserId_Info.id then
-local  ban = bot.getUser(UserId_Info.id)
-local InfoUser = bot.getUserFullInfo(UserId_Info.id)
-if InfoUser.bio then
-Bio = InfoUser.bio
+if text == "مطور السورس" or text == "مطور تايجر" or text == "مبرمج السورس" or text == "مطور سورس" or text == "↫ مطور السورس ◉" then 
+Text = "› *The developer of this source is* : [ميدو](https://t.me/U_Y_3_M)."
+keyboard = {} 
+keyboard.inline_keyboard = {
+    {{text='› ميدو ‹',url="t.me/U_Y_3_M"},},}
+local msg_id = msg.id/2097152/0.5
+https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&photo=https://t.me/U_Y_3_M&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+return false
+end
+--     Source Brind     --
+if (text == 'المطور' or text == 'مطور' or text =='↫ المطور ◉' or text =='↫ مطور البوت ◉') then
+local TextingDevBrind = Redis:get(Brind..'Texting:DevBrind')
+if TextingDevBrind then 
+LuaTele.sendText(msg.chat_id,msg.id,TextingDevBrind,"md",true)  
 else
-Bio = ''
-end
-local photo = bot.getUserProfilePhotos(UserId_Info.id)
-if photo.total_count > 0 then
-local DevJabwa = "*۩︙ 𝒅𝒆𝒗 𝒔𝒐𝒖𝒓𝒄𝒆 𝒕𝒊𝒈𝒆𝒓  ♯*\n*۩︙ɴᴀᴍᴇ -› *"..ban.first_name.."\n*۩︙ 𝒊𝒅 -› "..UserId_Info.id.."*\n*۩︙ 𝒃𝒊𝒐 -›*  *"..Bio.." *"
-keyboardd = {} 
-keyboardd.inline_keyboard = {
-{
-{text = username, url = "https://t.me/U_Y_3_M"}
-},
-}
-local msg_id = msg.id/2097152/0.5 
-https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(DevJabwa)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
-else
-local Dev Medo = "*۩︙ 𝒅𝒆𝒗 𝒔𝒐𝒖𝒓𝒄𝒆 𝒕𝒊𝒈𝒆𝒓  ♯*\n*۩︙𝒏𝒂𝒎𝒆  -› *"..ban.first_name.."\n*۩︙ 𝒊𝒅  -› "..UserId_Info.id.."*\n*۩︙ 𝒃𝒊𝒐 -›*  *"..Bio.." *"
-keyboardd = {} 
-keyboardd.inline_keyboard = {
-{
-{text = username, url = "https://t.me/U_Y_3_M"}
-},
-}
-local msg_id = msg.id/2097152/0.5 
-https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(DevJabwa).."&reply_to_message_id="..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
-end
-end
-end
+local photo = LuaTele.getUserProfilePhotos(Sudo_Id)
+local UserInfo = LuaTele.getUser(Sudo_Id)
+for Name_User in string.gmatch(UserInfo.first_name, "[^%s]+" ) do
+end 
 if text == 'اعدادات الحمايه' then 
 if not msg.Addictive or not msg.Mddictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*۩┊مايمديك .. هـذا الامـر يخـص { '..Controller_Num(8)..' }* ',"md",true)  
@@ -19157,11 +19142,11 @@ end
 end
 
 if text == '/start' then
-Redis:sadd(black..'Num:User:Pv',msg.sender.user_id)  
+Redis:sadd(ZELZAL..'Num:User:Pv',msg.sender.user_id)  
 if not msg.Devss then
-local photo = LuaTele.getUserProfilePhotos(black)
-if not Redis:get(black.."Start:Bot") then
-local CmdStart = '*\n ۩أهلآ بك في بوت '..(Redis:get(black.."Name:Bot") or "تايـجر")..
+local photo = LuaTele.getUserProfilePhotos(ZELZAL)
+if not Redis:get(ZELZAL.."Start:Bot") then
+local CmdStart = '*\n ۩أهلآ بك في بوت '..(Redis:get(ZELZAL.."Name:Bot") or "تايـجر")..
 '\n⚙️╢• وظيفتي حماية المجموعات '..
 '\n✅╢• لتفعيل البوت عليك اتباع مايلي .'..
 '\n➕╢• أضِف البوت إلى مجموعتك '..
@@ -19198,7 +19183,7 @@ data = {
 },
 }
 }
-LuaTele.sendPhoto(msg.chat_id, msg.id, photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id,Redis:get(black.."Start:Bot"),"md", true, nil, nil, nil, nil, nil, nil, nil, nil, reply_markup )
+LuaTele.sendPhoto(msg.chat_id, msg.id, photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id,Redis:get(ZELZAL.."Start:Bot"),"md", true, nil, nil, nil, nil, nil, nil, nil, nil, reply_markup )
 end
 else
 local reply_markup = LuaTele.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
