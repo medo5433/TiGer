@@ -12147,8 +12147,8 @@ end
 if text == '〘 مبرمج السورس 〙' or text == 'مبرمج السورس' or text == 'ميدو' or text == 'محمد' or text == 'اليوت' then  
 local UserId_Info = bot.searchPublicChat("U_Y_3_M")
 if UserId_Info.id then
-local  ban ='bot.getUser(UserId_Info.id)
-local InfoUser = 'bot.getUserFullInfo(UserId_Info.id)
+local  ban = bot.getUser(UserId_Info.id)
+local InfoUser = bot.getUserFullInfo(UserId_Info.id)
 if InfoUser.bio then
 Bio = InfoUser.bio
 else
@@ -18373,7 +18373,7 @@ name = string.gsub(name,"البحرين","🇧🇭")
 name = string.gsub(name,"فرنسا","🇫🇷")
 name = string.gsub(name,"سويسرا","🇨🇭")
 name = string.gsub(name,"انجلترا","🇬🇧")
-name = string.gsub(name,"تركيا","🇹🇷")
+name = string.gsub(name,"تركيا","🇹??")
 name = string.gsub(name,"الولايات المتحده","🇱🇷")
 name = string.gsub(name,"كندا","🇨🇦")
 name = string.gsub(name,"الكويت","🇰🇼")
