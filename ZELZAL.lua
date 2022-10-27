@@ -7293,15 +7293,19 @@ Redis:set(ZELZAL.."ZELZAL:BotFree",true)
 return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊تم تفعيل البوت الخدمي*","md",true)
 end
 if TextMsg == 'التواصل' then
-if not msg.ControllerBot then 
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*۩┊مايمديك .. هـذا الامـر يخـص { '..Controller_Num(1)..' }* ',"md",true)  
+if not msg.Asasy then 
+return send(msg_chat_id,msg_id,'\n* ۩ عذرآ الامر يخص〘 '..Controller_Num(1)..' 〙*',"md",true)  
+end
+if ChannelJoinch(msg) == false then
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(ZELZAL..'Chat:Channel:Join:Name'..msg.chat_id), url = 't.me/'..Redis:get(ZELZAL..'Chat:Channel:Join'..msg.chat_id)}, },}}
+return send(msg.chat_id,msg.id,'*\n ۩ عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 if ChannelJoin(msg) == false then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/'..Redis:get(ZELZAL..'ZELZAL:Channel:Join')}, },}}
-return LuaTele.sendText(msg.chat_id,msg.id,'*\n۩┊عليك الاشتراك في قناة البوت لـ استخدام الاوامر*',"md",false, false, false, false, reply_markup)
+local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(ZELZAL..'Channel:Join:Name'), url = 't.me/'..Redis:get(ZELZAL..'Channel:Join')}, },}}
+return send(msg.chat_id,msg.id,'*\n ۩ عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
-Redis:set(ZELZAL.."ZELZAL:TwaslBot",true) 
-return LuaTele.sendText(msg_chat_id,msg_id,"*۩┊تم تفعيل التواصل داخل البوت* ","md",true)
+Redis:set(ZELZAL.."TwaslBot",true) 
+return send(msg_chat_id,msg_id," ۩ تم تفعيل التواصل داخل البوت ","md",true)
 end
 
 end
@@ -9296,14 +9300,14 @@ end
 if text == 'المالك' or text == 'المنشئ' then
 if ChannelJoinch(msg) == false then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(ZELZAL..'Chat:Channel:Join:Name'..msg.chat_id), url = 't.me/'..Redis:get(ZELZAL..'Chat:Channel:Join'..msg.chat_id)}, },}}
-return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
+return send(msg.chat_id,msg.id,'*\n ۩ عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 if ChannelJoin(msg) == false then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(ZELZAL..'Channel:Join:Name'), url = 't.me/'..Redis:get(ZELZAL..'Channel:Join')}, },}}
-return send(msg.chat_id,msg.id,'*\n 𖥔 عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
+return send(msg.chat_id,msg.id,'*\n ۩ عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 if msg.can_be_deleted_for_all_users == false then
-return send(msg_chat_id,msg_id,"\n* 𖥔 عذرآ البوت ليس ادمن في المجموعه يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
+return send(msg_chat_id,msg_id,"\n* ۩ عذرآ البوت ليس ادمن في المجموعه يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 local Info_Members = bot.getSupergroupMembers(msg_chat_id, "Administrators", "*", 0, 200)
 local List_Members = Info_Members.members
@@ -9311,7 +9315,7 @@ for k, v in pairs(List_Members) do
 if Info_Members.members[k].status.ZELZALbots == "chatMemberStatusCreator" then
 local UserInfo = bot.getUser(v.member_id.user_id)
 if FlterBio(UserInfo.first_name) == "" then
-send(msg_chat_id,msg_id,"* 𖥔 اوبس , المالك حسابه محذوف *","md",true)  
+send(msg_chat_id,msg_id,"* ۩ اوبس , المالك حسابه محذوف *","md",true)  
 return false
 end 
 local photo = bot.getUserProfilePhotos(UserInfo.id)
@@ -12152,7 +12156,7 @@ Bio = ''
 end
 local photo = bot.getUserProfilePhotos(UserId_Info.id)
 if photo.total_count > 0 then
-local DevJabwa = "*𖥔︙ 𝒅𝒆𝒗 𝒔𝒐𝒖𝒓𝒄𝒆 𝒕𝒊𝒈𝒆𝒓  ♯*\n*𖥔︙ɴᴀᴍᴇ -› *"..ban.first_name.."\n*𖥔︙ 𝒊𝒅 -› "..UserId_Info.id.."*\n*𖥔︙ 𝒃𝒊𝒐 -›*  *"..Bio.." *"
+local DevJabwa = "*۩︙ 𝒅𝒆𝒗 𝒔𝒐𝒖𝒓𝒄𝒆 𝒕𝒊𝒈𝒆𝒓  ♯*\n*۩︙ɴᴀᴍᴇ -› *"..ban.first_name.."\n*۩︙ 𝒊𝒅 -› "..UserId_Info.id.."*\n*۩︙ 𝒃𝒊𝒐 -›*  *"..Bio.." *"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
@@ -12162,7 +12166,7 @@ keyboardd.inline_keyboard = {
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(DevJabwa)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
 else
-local Dev Medo = "*𖥔︙ 𝒅𝒆𝒗 𝒔𝒐𝒖𝒓𝒄𝒆 𝒕𝒊𝒈𝒆𝒓  ♯*\n*𖥔︙𝒏𝒂𝒎𝒆  -› *"..ban.first_name.."\n*𖥔︙ 𝒊𝒅  -› "..UserId_Info.id.."*\n*𖥔︙ 𝒃𝒊𝒐 -›*  *"..Bio.." *"
+local Dev Medo = "*۩︙ 𝒅𝒆𝒗 𝒔𝒐𝒖𝒓𝒄𝒆 𝒕𝒊𝒈𝒆𝒓  ♯*\n*۩︙𝒏𝒂𝒎𝒆  -› *"..ban.first_name.."\n*۩︙ 𝒊𝒅  -› "..UserId_Info.id.."*\n*۩︙ 𝒃𝒊𝒐 -›*  *"..Bio.." *"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
@@ -19174,42 +19178,67 @@ https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ms
 end
 end
 
-if text == '/start' then
-Redis:sadd(ZELZAL..'ZELZAL:Num:User:Pv',msg.sender.user_id)  
-if not msg.ControllerBot then
-if not Redis:get(ZELZAL.."ZELZAL:Start:Bot") then
-local CmdStart = '*\n۩┊مرحبـاً بـك عـزيـزي في بـوت '..(Redis:get(ZELZAL.."ZELZAL:Name:Bot") or "البـوت")..
-'\n۩┊بـوت ممطـروق إختصاصي حمـاية المجموعـات'..
-'\n۩┊لـ تفعيـلي عليـك إتبـاع مـايلـي ...'..
-'\n۩┊اضف البوت الى مجموعتك'..
-'\n۩┊ارفعـني إشـراف ثم ارسـل { تفعيل }'..
-'\n۩┊ثم اضغـط على زر رفـع المـالك والادمنيـة'..
-'\n\n۩┊لعـرض كيبـورد الاوامـر الخـدميـة إضغـط ← /tiger *'
-local reply_markup = LuaTele.replyMarkup{
-type = 'inline',
-data = {
-{
-{text = 'أضغط لاضافه البوت لمجموعتك 𖠪', url = 't.me/'..UserBot..'?startgroup=new'}, 
-},
-{
-{text = '۩ مطـور البـوت ۩', url = 't.me/'..UserSudo}, 
-},
-}
-}
-return LuaTele.sendText(msg_chat_id,msg_id,CmdStart,"md",false, false, false, false, reply_markup)
+if text == '/start' or text =='↫ رجـوع  •' then
+local photo = bot.getUserProfilePhotos(Saidi)
+local ban = bot.getUser(Saidi)
+local Jabwa = bot.getUser(Sudo_Id) 
+local Mostafa = (Redis:get(Saidi.."Name:Bot") or " ميدو")
+local ban = bot.getUser(msg.sender_id.user_id)
+Participants = (Redis:scard(Saidi..'Num:User:Pv') or 0)
+Redis:sadd(Saidi..'Num:User:Pv',msg.sender_id.user_id)
+if not msg.Asasy then
+if not Redis:get(Saidi.."Start:Bot") then
+if ban.username then
+banusername = ' @'..ban.username..' '
 else
-local reply_markup = LuaTele.replyMarkup{
+banusername = 'لا يوجد'
+end
+if ban.first_name then
+baniusername = '*['..ban.first_name..'](tg://user?id='..ban.id..')*'
+else
+baniusername = 'لا يوجد'
+end
+local Usperos = ' '..Participants..' '
+local CmdStart = '*\n𖥔 أهلآ بك في بوت'..(Redis:get(Saidi.."Name:Bot") or " ميدو")..
+'\n⚙️╢• وظيفتي حماية المجموعات '..
+'\n✅╢• لتفعيل البوت عليك اتباع مايلي .'..
+'\n➕╢• أضِف البوت إلى مجموعتك '..
+'\n⚡️╢• ارفعهُ » مشرف + اكتب تفعيل '..
+'\n⬆️╢• سيتم ترقيتك مالك في البوت '..
+'\n☑️╢• لكي أعمل معك بشكل صحيح '.. 
+'\n🔰╢• تأكد » من اعطائي حذف الرسائل '..
+'\n🔰╢• تأكد » من تفعيل الألعاب '..
+'\n🔰╢• تأكد » من تفعيل الرفع '..
+'\n🔰╢• تأكد » من تفعيل ردود السورس  '..
+'\n🔰╢• ارسل كلمة { /keb }  لاظهار الكيبورد '..
+'\n🔰╢• مـطـور الـبـوت 🔰{@'..UserSudo..'}*'
+if photo.total_count > 0 then
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = '• مطور البوت •', url = "https://t.me/"..Jabwa.username..""},{text = '• قناة السورس •', url = "https://t.me/TGe_R"},
+},
+{
+{text = 'اضف البوت لمجموعتك ✅', url = 't.me/'..UserBot..'?startgroup=new'},
+},
+}
+local msgg = msg_id/2097152/0.5
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id.."&caption=".. URL.escape(CmdStart).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+bot.sendText(Sudo_Id,0,'*\n 𖥔 دخل شخص إلى البوت \n 𖥔 اسمه -› '..baniusername..' \n 𖥔 ايديه -› '..msg.sender_id.user_id..'\n 𖥔 معرفة -› '..banusername..' \n 𖥔 أصبحت الاحصائيات -› '..Usperos..' \n *',"md")
+else
+local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'أضغط لاضافه البوت لمجموعتك 𖠪', url = 't.me/'..UserBot..'?startgroup=new'}, 
+{text = '𓌹 مـطـور الـبـوت 𓌺', url = "https://t.me/"..Jabwa.username..""},
 },
 {
-{text = '۩ مطـور البـوت ۩', url = 't.me/'..UserSudo}, 
+{text = '𓌹 ضيفني فمجموعتك 𓌺'..Mostafa..' لمجموعتك ', url = 't.me/'..UserBot..'?startgroup=new'},
 },
 }
 }
-return LuaTele.sendText(msg_chat_id,msg_id,Redis:get(ZELZAL.."ZELZAL:Start:Bot"),"md",false, false, false, false, reply_markup)
+return bot.sendText(msg_chat_id,msg_id,Redis:get(Saidi.."Start:Bot"),"md",false, false, false, false, reply_markup)
+end
 end
 else
 local reply_markup = LuaTele.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
@@ -19327,17 +19356,17 @@ end
 end
 if text == "تفعيل البوت بصوره" or text == "تفعيل البوت بالصورة" or text == "تفعيل البوت بالصوره" then
 if not msg.Devss then
-send(msg_chat_id,msg_id,'\n*𖥔 هذا الامر يخص  '..Controller_Num(2)..' * ',"md",true)  
+send(msg_chat_id,msg_id,'\n*۩ هذا الامر يخص  '..Controller_Num(2)..' * ',"md",true)  
 end
 Redis:set(Fast.."name bot type -> ", "photo")
-send(msg_chat_id,msg_id,'\n*𖥔 تم تفعيل رد البوت بصوره * ',"md",true)  
+send(msg_chat_id,msg_id,'\n*۩ تم تفعيل رد البوت بصوره * ',"md",true)  
 end
 if text == "تعطيل البوت بصوره" or text == "تعطيل البوت بالصورة" or text == "تعطيل البوت بالصوره" then
 if not msg.Devss then
-send(msg_chat_id,msg_id,'\n*𖥔 هذا الامر يخص  '..Controller_Num(2)..' * ',"md",true)  
+send(msg_chat_id,msg_id,'\n*۩ هذا الامر يخص  '..Controller_Num(2)..' * ',"md",true)  
 end
 Redis:set(Fast.."name bot type -> ", "text")
-send(msg_chat_id,msg_id,'\n*𖥔 تم تعطيل رد البوت بصوره * ',"md",true)  
+send(msg_chat_id,msg_id,'\n*۩ تم تعطيل رد البوت بصوره * ',"md",true)  
 end
 if text == 'قسـم الحمايـه 🛡' or text == 'ٴ♡━━━━━━ ᴛꞮɢᴇƦ ━━━━━♡ ٴ' then
 Redis:sadd(ZELZAL..'ZELZAL:Num:User:Pv',msg.sender.user_id)  
